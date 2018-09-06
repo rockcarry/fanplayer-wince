@@ -1,0 +1,2689 @@
+EXPORTS
+    audio_resample
+    audio_resample_close
+    av_audio_convert
+    av_audio_convert_alloc
+    av_audio_convert_free
+    av_audio_resample_init
+    av_bitstream_filter_close
+    av_bitstream_filter_filter
+    av_bitstream_filter_init
+    av_bitstream_filter_next
+    av_bsf_alloc
+    av_bsf_free
+    av_bsf_get_by_name
+    av_bsf_get_class
+    av_bsf_get_null_filter
+    av_bsf_init
+    av_bsf_list_alloc
+    av_bsf_list_append
+    av_bsf_list_append2
+    av_bsf_list_finalize
+    av_bsf_list_free
+    av_bsf_list_parse_str
+    av_bsf_next
+    av_bsf_receive_packet
+    av_bsf_send_packet
+    av_codec_ffversion DATA
+    av_codec_get_chroma_intra_matrix
+    av_codec_get_codec_descriptor
+    av_codec_get_codec_properties
+    av_codec_get_lowres
+    av_codec_get_max_lowres
+    av_codec_get_pkt_timebase
+    av_codec_get_seek_preroll
+    av_codec_is_decoder
+    av_codec_is_encoder
+    av_codec_next
+    av_codec_set_chroma_intra_matrix
+    av_codec_set_codec_descriptor
+    av_codec_set_lowres
+    av_codec_set_pkt_timebase
+    av_codec_set_seek_preroll
+    av_copy_packet
+    av_copy_packet_side_data
+    av_cpb_properties_alloc
+    av_d3d11va_alloc_context
+    av_dct_calc
+    av_dct_end
+    av_dct_init
+    av_dirac_parse_sequence_header
+    av_dup_packet
+    av_dv_codec_profile
+    av_dv_codec_profile2
+    av_dv_frame_profile
+    av_fast_padded_malloc
+    av_fast_padded_mallocz
+    av_fft_calc
+    av_fft_end
+    av_fft_init
+    av_fft_permute
+    av_free_packet
+    av_get_audio_frame_duration
+    av_get_audio_frame_duration2
+    av_get_bits_per_sample
+    av_get_codec_tag_string
+    av_get_exact_bits_per_sample
+    av_get_pcm_codec
+    av_get_profile_name
+    av_grow_packet
+    av_hwaccel_next
+    av_imdct_calc
+    av_imdct_half
+    av_init_packet
+    av_jni_get_java_vm
+    av_jni_set_java_vm
+    av_lockmgr_register
+    av_log_ask_for_sample
+    av_log_missing_feature
+    av_mdct_calc
+    av_mdct_end
+    av_mdct_init
+    av_mediacodec_alloc_context
+    av_mediacodec_default_free
+    av_mediacodec_default_init
+    av_mediacodec_release_buffer
+    av_new_packet
+    av_packet_add_side_data
+    av_packet_alloc
+    av_packet_clone
+    av_packet_copy_props
+    av_packet_free
+    av_packet_free_side_data
+    av_packet_from_data
+    av_packet_get_side_data
+    av_packet_merge_side_data
+    av_packet_move_ref
+    av_packet_new_side_data
+    av_packet_pack_dictionary
+    av_packet_ref
+    av_packet_rescale_ts
+    av_packet_shrink_side_data
+    av_packet_side_data_name
+    av_packet_split_side_data
+    av_packet_unpack_dictionary
+    av_packet_unref
+    av_parser_change
+    av_parser_close
+    av_parser_init
+    av_parser_next
+    av_parser_parse2
+    av_picture_copy
+    av_picture_crop
+    av_picture_pad
+    av_qsv_alloc_context
+    av_rdft_calc
+    av_rdft_end
+    av_rdft_init
+    av_register_bitstream_filter
+    av_register_codec_parser
+    av_register_hwaccel
+    av_resample
+    av_resample_close
+    av_resample_compensate
+    av_resample_init
+    av_shrink_packet
+    av_vorbis_parse_frame
+    av_vorbis_parse_frame_flags
+    av_vorbis_parse_free
+    av_vorbis_parse_init
+    av_vorbis_parse_reset
+    av_xiphlacing
+    avcodec_align_dimensions
+    avcodec_align_dimensions2
+    avcodec_alloc_context3
+    avcodec_chroma_pos_to_enum
+    avcodec_close
+    avcodec_configuration
+    avcodec_copy_context
+    avcodec_dct_alloc
+    avcodec_dct_get_class
+    avcodec_dct_init
+    avcodec_decode_audio4
+    avcodec_decode_subtitle2
+    avcodec_decode_video2
+    avcodec_default_execute
+    avcodec_default_execute2
+    avcodec_default_get_buffer2
+    avcodec_default_get_format
+    avcodec_descriptor_get
+    avcodec_descriptor_get_by_name
+    avcodec_descriptor_next
+    avcodec_encode_audio2
+    avcodec_encode_subtitle
+    avcodec_encode_video2
+    avcodec_enum_to_chroma_pos
+    avcodec_fill_audio_frame
+    avcodec_find_best_pix_fmt2
+    avcodec_find_best_pix_fmt_of_2
+    avcodec_find_best_pix_fmt_of_list
+    avcodec_find_decoder
+    avcodec_find_decoder_by_name
+    avcodec_find_encoder
+    avcodec_find_encoder_by_name
+    avcodec_flush_buffers
+    avcodec_free_context
+    avcodec_get_chroma_sub_sample
+    avcodec_get_class
+    avcodec_get_context_defaults3
+    avcodec_get_edge_width
+    avcodec_get_frame_class
+    avcodec_get_name
+    avcodec_get_pix_fmt_loss
+    avcodec_get_subtitle_rect_class
+    avcodec_get_type
+    avcodec_is_open
+    avcodec_license
+    avcodec_open2
+    avcodec_parameters_alloc
+    avcodec_parameters_copy
+    avcodec_parameters_free
+    avcodec_parameters_from_context
+    avcodec_parameters_to_context
+    avcodec_pix_fmt_to_codec_tag
+    avcodec_profile_name
+    avcodec_receive_frame
+    avcodec_receive_packet
+    avcodec_register
+    avcodec_register_all
+    avcodec_send_frame
+    avcodec_send_packet
+    avcodec_set_dimensions
+    avcodec_string
+    avcodec_version
+    avpicture_alloc
+    avpicture_fill
+    avpicture_free
+    avpicture_get_size
+    avpicture_layout
+    avpriv_aac_parse_header
+    avpriv_ac3_channel_layout_tab DATA
+    avpriv_ac3_parse_header
+    avpriv_align_put_bits
+    avpriv_bprint_to_extradata
+    avpriv_codec_get_cap_skip_frame_fill_param
+    avpriv_copy_bits
+    avpriv_copy_pce_data
+    avpriv_dca_convert_bitstream
+    avpriv_dca_sample_rates DATA
+    avpriv_dnxhd_get_frame_size
+    avpriv_dnxhd_get_interlaced
+    avpriv_dnxhd_parse_header_prefix
+    avpriv_exif_decode_ifd
+    avpriv_find_pix_fmt
+    avpriv_find_start_code
+    avpriv_get_raw_pix_fmt_tags
+    avpriv_h264_has_num_reorder_frames
+    avpriv_lock_avformat
+    avpriv_mjpeg_bits_ac_chrominance DATA
+    avpriv_mjpeg_bits_ac_luminance DATA
+    avpriv_mjpeg_bits_dc_chrominance DATA
+    avpriv_mjpeg_bits_dc_luminance DATA
+    avpriv_mjpeg_val_ac_chrominance DATA
+    avpriv_mjpeg_val_ac_luminance DATA
+    avpriv_mjpeg_val_dc DATA
+    avpriv_mpa_bitrate_tab DATA
+    avpriv_mpa_decode_header
+    avpriv_mpa_decode_header2
+    avpriv_mpa_freq_tab DATA
+    avpriv_mpeg4audio_get_config
+    avpriv_mpeg4audio_sample_rates DATA
+    avpriv_mpegaudio_decode_header
+    avpriv_pix_fmt_bps_avi DATA
+    avpriv_pix_fmt_bps_mov DATA
+    avpriv_put_string
+    avpriv_split_xiph_headers
+    avpriv_tak_parse_streaminfo
+    avpriv_toupper4
+    avpriv_unlock_avformat
+    avsubtitle_free
+    ff_aac_ac3_parse
+    ff_aac_adtstoasc_bsf DATA
+    ff_aac_codebook_vector_idx DATA
+    ff_aac_codebook_vector_vals DATA
+    ff_aac_codebook_vectors DATA
+    ff_aac_decoder DATA
+    ff_aac_eld_window_480 DATA
+    ff_aac_eld_window_480_fixed DATA
+    ff_aac_eld_window_512 DATA
+    ff_aac_eld_window_512_fixed DATA
+    ff_aac_fixed_decoder DATA
+    ff_aac_kbd_long_1024 DATA
+    ff_aac_kbd_long_1024_fixed DATA
+    ff_aac_kbd_short_128 DATA
+    ff_aac_kbd_short_128_fixed DATA
+    ff_aac_latm_decoder DATA
+    ff_aac_latm_parser DATA
+    ff_aac_num_swb_1024 DATA
+    ff_aac_num_swb_128 DATA
+    ff_aac_num_swb_480 DATA
+    ff_aac_num_swb_512 DATA
+    ff_aac_parser DATA
+    ff_aac_pow2sf_tab DATA
+    ff_aac_pow34sf_tab DATA
+    ff_aac_pred_sfb_max DATA
+    ff_aac_sbr_ctx_close
+    ff_aac_sbr_ctx_close_fixed
+    ff_aac_sbr_ctx_init
+    ff_aac_sbr_ctx_init_fixed
+    ff_aac_sbr_init
+    ff_aac_sbr_init_fixed
+    ff_aac_scalefactor_bits DATA
+    ff_aac_scalefactor_code DATA
+    ff_aac_spectral_bits DATA
+    ff_aac_spectral_codes DATA
+    ff_aac_spectral_sizes DATA
+    ff_aanscales DATA
+    ff_aasc_decoder DATA
+    ff_ac3_band_start_tab DATA
+    ff_ac3_bap_bits DATA
+    ff_ac3_bap_tab DATA
+    ff_ac3_bin_to_band_tab DATA
+    ff_ac3_bit_alloc_calc_bap_armv6 DATA
+    ff_ac3_bit_alloc_calc_mask
+    ff_ac3_bit_alloc_calc_psd
+    ff_ac3_bitrate_tab DATA
+    ff_ac3_channels_tab DATA
+    ff_ac3_db_per_bit_tab DATA
+    ff_ac3_dec_channel_map DATA
+    ff_ac3_decoder DATA
+    ff_ac3_enc_channel_map DATA
+    ff_ac3_fast_decay_tab DATA
+    ff_ac3_fast_gain_tab DATA
+    ff_ac3_fixed_decoder DATA
+    ff_ac3_floor_tab DATA
+    ff_ac3_frame_size_tab DATA
+    ff_ac3_hearing_threshold_tab DATA
+    ff_ac3_heavy_dynamic_range_tab DATA
+    ff_ac3_log_add_tab DATA
+    ff_ac3_parser DATA
+    ff_ac3_rematrix_band_tab DATA
+    ff_ac3_sample_rate_tab DATA
+    ff_ac3_slow_decay_tab DATA
+    ff_ac3_slow_gain_tab DATA
+    ff_ac3_ungroup_3_in_5_bits_tab DATA
+    ff_ac3_update_bap_counts_arm DATA
+    ff_ac3_window DATA
+    ff_ac3dsp_downmix
+    ff_ac3dsp_downmix_fixed
+    ff_ac3dsp_init
+    ff_ac3dsp_init_arm
+    ff_acelp_apply_order_2_transfer_function
+    ff_acelp_decode_4bit_to_2nd_delay3
+    ff_acelp_decode_5_6_bit_to_2nd_delay3
+    ff_acelp_decode_6bit_to_2nd_delay6
+    ff_acelp_decode_8bit_to_1st_delay3
+    ff_acelp_decode_9bit_to_1st_delay6
+    ff_acelp_decode_gain_code
+    ff_acelp_fc_pulse_per_track
+    ff_acelp_filter_init
+    ff_acelp_high_pass_filter
+    ff_acelp_interp_filter DATA
+    ff_acelp_interpolate
+    ff_acelp_interpolatef
+    ff_acelp_lp_decode
+    ff_acelp_lsf2lsp
+    ff_acelp_lsf2lspd
+    ff_acelp_lsp2lpc
+    ff_acelp_lspd2lpc
+    ff_acelp_reorder_lsf
+    ff_acelp_update_past_gain
+    ff_acelp_vectors_init
+    ff_acelp_weighted_vector_sum
+    ff_adaptive_gain_control
+    ff_add_cpb_side_data
+    ff_add_pixels_clamped DATA
+    ff_add_pixels_clamped_arm DATA
+    ff_add_pixels_clamped_armv6 DATA
+    ff_adpcm_4xm_decoder DATA
+    ff_adpcm_AdaptCoeff1 DATA
+    ff_adpcm_AdaptCoeff2 DATA
+    ff_adpcm_AdaptationTable DATA
+    ff_adpcm_adx_decoder DATA
+    ff_adpcm_afc_coeffs DATA
+    ff_adpcm_afc_decoder DATA
+    ff_adpcm_aica_decoder DATA
+    ff_adpcm_ct_decoder DATA
+    ff_adpcm_dtk_decoder DATA
+    ff_adpcm_ea_decoder DATA
+    ff_adpcm_ea_maxis_xa_decoder DATA
+    ff_adpcm_ea_r1_decoder DATA
+    ff_adpcm_ea_r2_decoder DATA
+    ff_adpcm_ea_r3_decoder DATA
+    ff_adpcm_ea_xas_decoder DATA
+    ff_adpcm_g722_decoder DATA
+    ff_adpcm_g726_decoder DATA
+    ff_adpcm_g726le_decoder DATA
+    ff_adpcm_ima_amv_decoder DATA
+    ff_adpcm_ima_apc_decoder DATA
+    ff_adpcm_ima_dat4_decoder DATA
+    ff_adpcm_ima_dk3_decoder DATA
+    ff_adpcm_ima_dk4_decoder DATA
+    ff_adpcm_ima_ea_eacs_decoder DATA
+    ff_adpcm_ima_ea_sead_decoder DATA
+    ff_adpcm_ima_iss_decoder DATA
+    ff_adpcm_ima_oki_decoder DATA
+    ff_adpcm_ima_qt_decoder DATA
+    ff_adpcm_ima_rad_decoder DATA
+    ff_adpcm_ima_smjpeg_decoder DATA
+    ff_adpcm_ima_wav_decoder DATA
+    ff_adpcm_ima_ws_decoder DATA
+    ff_adpcm_index_table DATA
+    ff_adpcm_index_tables DATA
+    ff_adpcm_ms_decoder DATA
+    ff_adpcm_mtaf_decoder DATA
+    ff_adpcm_mtaf_stepsize DATA
+    ff_adpcm_oki_step_table DATA
+    ff_adpcm_psx_decoder DATA
+    ff_adpcm_sbpro_2_decoder DATA
+    ff_adpcm_sbpro_3_decoder DATA
+    ff_adpcm_sbpro_4_decoder DATA
+    ff_adpcm_step_table DATA
+    ff_adpcm_swf_decoder DATA
+    ff_adpcm_thp_decoder DATA
+    ff_adpcm_thp_le_decoder DATA
+    ff_adpcm_vima_decoder DATA
+    ff_adpcm_xa_decoder DATA
+    ff_adpcm_yamaha_decoder DATA
+    ff_adpcm_yamaha_difflookup DATA
+    ff_adpcm_yamaha_indexscale DATA
+    ff_adx_calculate_coeffs
+    ff_adx_decode_header
+    ff_adx_parser DATA
+    ff_aic_dc_scale_table DATA
+    ff_aic_decoder DATA
+    ff_alac_channel_elements DATA
+    ff_alac_channel_layout_offsets DATA
+    ff_alac_channel_layouts DATA
+    ff_alac_decoder DATA
+    ff_alacdsp_init
+    ff_alias_pix_decoder DATA
+    ff_alloc_a53_sei
+    ff_alloc_entries
+    ff_alloc_packet
+    ff_alloc_packet2
+    ff_alloc_picture
+    ff_als_decoder DATA
+    ff_alternate_horizontal_scan DATA
+    ff_alternate_vertical_scan DATA
+    ff_amr_set_fixed_gain
+    ff_amrnb_decoder DATA
+    ff_amrwb_decoder DATA
+    ff_amrwb_lsp2lpc
+    ff_amv_decoder DATA
+    ff_anm_decoder DATA
+    ff_ansi_decoder DATA
+    ff_ape_decoder DATA
+    ff_apply_motion_4x4
+    ff_apply_motion_8x8
+    ff_apply_vector_2x2
+    ff_apply_vector_4x4
+    ff_ass_add_rect
+    ff_ass_bprint_text_event
+    ff_ass_decoder DATA
+    ff_ass_decoder_flush
+    ff_ass_get_dialog
+    ff_ass_subtitle_header
+    ff_ass_subtitle_header_default
+    ff_asv1_decoder DATA
+    ff_asv2_decoder DATA
+    ff_asv2_level_tab DATA
+    ff_asv_ac_ccp_tab DATA
+    ff_asv_ccp_tab DATA
+    ff_asv_common_init
+    ff_asv_dc_ccp_tab DATA
+    ff_asv_level_tab DATA
+    ff_asv_scantab DATA
+    ff_atrac1_decoder DATA
+    ff_atrac3_decoder DATA
+    ff_atrac3al_decoder DATA
+    ff_atrac3p_decode_channel_unit
+    ff_atrac3p_decoder DATA
+    ff_atrac3p_generate_tones
+    ff_atrac3p_imdct
+    ff_atrac3p_init_imdct
+    ff_atrac3p_init_vlcs
+    ff_atrac3p_init_wave_synth
+    ff_atrac3p_ipqf
+    ff_atrac3p_mant_tab DATA
+    ff_atrac3p_power_compensation
+    ff_atrac3p_qu_to_spec_pos DATA
+    ff_atrac3p_sf_tab DATA
+    ff_atrac3pal_decoder DATA
+    ff_atrac_gain_compensation
+    ff_atrac_generate_tables
+    ff_atrac_init_gain_compensation
+    ff_atrac_iqmf
+    ff_atrac_sf_table DATA
+    ff_audiodsp_init
+    ff_audiodsp_init_arm
+    ff_aura2_decoder DATA
+    ff_aura_decoder DATA
+    ff_avcodec_locked DATA
+    ff_avg_dirac_pixels16_c
+    ff_avg_dirac_pixels16_l2_c
+    ff_avg_dirac_pixels16_l4_c
+    ff_avg_dirac_pixels32_c
+    ff_avg_dirac_pixels32_l2_c
+    ff_avg_dirac_pixels32_l4_c
+    ff_avg_dirac_pixels8_c
+    ff_avg_dirac_pixels8_l2_c
+    ff_avg_dirac_pixels8_l4_c
+    ff_avg_pixels16_armv6 DATA
+    ff_avg_pixels16x16_c
+    ff_avg_pixels8_armv6 DATA
+    ff_avg_pixels8x8_c
+    ff_avg_qpel16_mc11_old_c
+    ff_avg_qpel16_mc12_old_c
+    ff_avg_qpel16_mc13_old_c
+    ff_avg_qpel16_mc31_old_c
+    ff_avg_qpel16_mc32_old_c
+    ff_avg_qpel16_mc33_old_c
+    ff_avg_qpel8_mc11_old_c
+    ff_avg_qpel8_mc12_old_c
+    ff_avg_qpel8_mc13_old_c
+    ff_avg_qpel8_mc31_old_c
+    ff_avg_qpel8_mc32_old_c
+    ff_avg_qpel8_mc33_old_c
+    ff_avrn_decoder DATA
+    ff_avrp_decoder DATA
+    ff_avs_decoder DATA
+    ff_avui_decoder DATA
+    ff_ayuv_decoder DATA
+    ff_b60_sinc DATA
+    ff_bethsoftvid_decoder DATA
+    ff_bfi_decoder DATA
+    ff_bgmc_decode
+    ff_bgmc_decode_end
+    ff_bgmc_decode_init
+    ff_bgmc_end
+    ff_bgmc_init
+    ff_big_add
+    ff_big_div
+    ff_big_mul
+    ff_bink_decoder DATA
+    ff_binkaudio_dct_decoder DATA
+    ff_binkaudio_rdft_decoder DATA
+    ff_binkdsp_init
+    ff_bintext_decoder DATA
+    ff_block_permute
+    ff_blockdsp_init
+    ff_blockdsp_init_arm
+    ff_bmp_decoder DATA
+    ff_bmp_parser DATA
+    ff_bmv_audio_decoder DATA
+    ff_bmv_video_decoder DATA
+    ff_brender_pix_decoder DATA
+    ff_bsf_child_class_next
+    ff_bsf_get_packet
+    ff_bsf_get_packet_ref
+    ff_bswapdsp_init
+    ff_build_rac_states
+    ff_c93_decoder DATA
+    ff_canopus_parse_info_tag
+    ff_cavs_chroma_qp DATA
+    ff_cavs_decoder DATA
+    ff_cavs_dir_mv DATA
+    ff_cavs_end
+    ff_cavs_filter
+    ff_cavs_init
+    ff_cavs_init_mb
+    ff_cavs_init_pic
+    ff_cavs_init_top_lines
+    ff_cavs_inter
+    ff_cavs_intra_mv DATA
+    ff_cavs_load_intra_pred_chroma
+    ff_cavs_load_intra_pred_luma
+    ff_cavs_modify_mb_i
+    ff_cavs_mv
+    ff_cavs_next_mb
+    ff_cavs_partition_flags DATA
+    ff_cavsdsp_init
+    ff_cavsvideo_parser DATA
+    ff_cb1_base DATA
+    ff_cb1_vects DATA
+    ff_cb2_base DATA
+    ff_cb2_vects DATA
+    ff_cbpc_b_tab DATA
+    ff_cbrt_tab DATA
+    ff_cbrt_tab_fixed DATA
+    ff_cbrt_tableinit
+    ff_cbrt_tableinit_fixed
+    ff_ccaption_decoder DATA
+    ff_ccitt_unpack
+    ff_ccitt_unpack_init
+    ff_cdgraphics_decoder DATA
+    ff_cdxl_decoder DATA
+    ff_celp_circ_addf
+    ff_celp_convolve_circ
+    ff_celp_filter_init
+    ff_celp_lp_synthesis_filter
+    ff_celp_lp_synthesis_filterf
+    ff_celp_lp_zero_synthesis_filterf
+    ff_celp_math_init
+    ff_celt_alpha_coef DATA
+    ff_celt_band_end DATA
+    ff_celt_beta_coef DATA
+    ff_celt_bit_deinterleave DATA
+    ff_celt_bit_interleave DATA
+    ff_celt_cache_bits DATA
+    ff_celt_cache_index DATA
+    ff_celt_coarse_energy_dist DATA
+    ff_celt_decode_band
+    ff_celt_decode_frame
+    ff_celt_encode_band
+    ff_celt_flush
+    ff_celt_free
+    ff_celt_freq_bands DATA
+    ff_celt_freq_range DATA
+    ff_celt_hadamard_ordery DATA
+    ff_celt_init
+    ff_celt_log2_frac DATA
+    ff_celt_log_freq_range DATA
+    ff_celt_mean_energy DATA
+    ff_celt_model_alloc_trim DATA
+    ff_celt_model_energy_small DATA
+    ff_celt_model_spread DATA
+    ff_celt_model_tapset DATA
+    ff_celt_pvq_u DATA
+    ff_celt_pvq_u_row DATA
+    ff_celt_qn_exp2 DATA
+    ff_celt_static_alloc DATA
+    ff_celt_static_caps DATA
+    ff_celt_tf_select DATA
+    ff_celt_window DATA
+    ff_celt_window2 DATA
+    ff_cfhd_decoder DATA
+    ff_cfhd_init_vlcs
+    ff_cga_palette DATA
+    ff_check_alignment
+    ff_chomp_bsf DATA
+    ff_cinepak_decoder DATA
+    ff_clean_intra_table_entries
+    ff_clear_fixed_vector
+    ff_clearvideo_decoder DATA
+    ff_cljr_decoder DATA
+    ff_cllc_decoder DATA
+    ff_codec_open2_recursive
+    ff_color_frame
+    ff_combine_frame
+    ff_comfortnoise_decoder DATA
+    ff_convert_matrix
+    ff_cook_decoder DATA
+    ff_cook_parser DATA
+    ff_copy_and_dup
+    ff_cos_1024 DATA
+    ff_cos_1024_fixed DATA
+    ff_cos_128 DATA
+    ff_cos_128_fixed DATA
+    ff_cos_131072 DATA
+    ff_cos_131072_fixed DATA
+    ff_cos_16 DATA
+    ff_cos_16384 DATA
+    ff_cos_16384_fixed DATA
+    ff_cos_16_fixed DATA
+    ff_cos_2048 DATA
+    ff_cos_2048_fixed DATA
+    ff_cos_256 DATA
+    ff_cos_256_fixed DATA
+    ff_cos_32 DATA
+    ff_cos_32768 DATA
+    ff_cos_32768_fixed DATA
+    ff_cos_32_fixed DATA
+    ff_cos_4096 DATA
+    ff_cos_4096_fixed DATA
+    ff_cos_512 DATA
+    ff_cos_512_fixed DATA
+    ff_cos_64 DATA
+    ff_cos_64_fixed DATA
+    ff_cos_65536 DATA
+    ff_cos_65536_fixed DATA
+    ff_cos_8192 DATA
+    ff_cos_8192_fixed DATA
+    ff_cos_tabs DATA
+    ff_cos_tabs_fixed DATA
+    ff_cpia_decoder DATA
+    ff_crop_tab DATA
+    ff_cscd_decoder DATA
+    ff_cyuv_decoder DATA
+    ff_dc_chroma_vlc DATA
+    ff_dc_lum_vlc DATA
+    ff_dca_adpcm_vb DATA
+    ff_dca_avg_g3_freqs DATA
+    ff_dca_bank_coeff DATA
+    ff_dca_bit_rates DATA
+    ff_dca_bits_per_sample DATA
+    ff_dca_channels DATA
+    ff_dca_core_bsf DATA
+    ff_dca_core_close
+    ff_dca_core_filter_fixed
+    ff_dca_core_filter_frame
+    ff_dca_core_flush
+    ff_dca_core_init
+    ff_dca_core_parse
+    ff_dca_core_parse_exss
+    ff_dca_corr_cf DATA
+    ff_dca_decoder DATA
+    ff_dca_dmix_primary_nch DATA
+    ff_dca_dmixtable DATA
+    ff_dca_downmix_to_stereo_fixed
+    ff_dca_downmix_to_stereo_float
+    ff_dca_exss_parse
+    ff_dca_fir_32bands_nonperfect DATA
+    ff_dca_fir_32bands_nonperfect_fixed DATA
+    ff_dca_fir_32bands_perfect DATA
+    ff_dca_fir_32bands_perfect_fixed DATA
+    ff_dca_fir_64bands DATA
+    ff_dca_fir_64bands_fixed DATA
+    ff_dca_freq_ranges DATA
+    ff_dca_freq_to_sb DATA
+    ff_dca_fst_amp DATA
+    ff_dca_grid_1_to_scf DATA
+    ff_dca_grid_1_weights DATA
+    ff_dca_grid_2_to_scf DATA
+    ff_dca_high_freq_vq DATA
+    ff_dca_init_vlcs
+    ff_dca_inv_dmixtable DATA
+    ff_dca_joint_scale_factors DATA
+    ff_dca_lbr_close
+    ff_dca_lbr_filter_frame
+    ff_dca_lbr_flush
+    ff_dca_lbr_init
+    ff_dca_lbr_parse
+    ff_dca_lfe_delta_index_16 DATA
+    ff_dca_lfe_delta_index_24 DATA
+    ff_dca_lfe_fir_128 DATA
+    ff_dca_lfe_fir_64 DATA
+    ff_dca_lfe_fir_64_fixed DATA
+    ff_dca_lfe_iir DATA
+    ff_dca_lfe_step_size_16 DATA
+    ff_dca_lfe_step_size_24 DATA
+    ff_dca_long_window DATA
+    ff_dca_lossless_quant DATA
+    ff_dca_lossy_quant DATA
+    ff_dca_parser DATA
+    ff_dca_ph0_shift DATA
+    ff_dca_quant_amp DATA
+    ff_dca_quant_index_group_size DATA
+    ff_dca_quant_index_sel_nbits DATA
+    ff_dca_quant_levels DATA
+    ff_dca_rsd_level_16 DATA
+    ff_dca_rsd_level_2a DATA
+    ff_dca_rsd_level_2b DATA
+    ff_dca_rsd_level_3 DATA
+    ff_dca_rsd_level_5 DATA
+    ff_dca_rsd_level_8 DATA
+    ff_dca_rsd_pack_3_in_7 DATA
+    ff_dca_rsd_pack_5_in_8 DATA
+    ff_dca_sampling_freqs DATA
+    ff_dca_sb_reorder DATA
+    ff_dca_scale_factor_adj DATA
+    ff_dca_scale_factor_quant6 DATA
+    ff_dca_scale_factor_quant7 DATA
+    ff_dca_scf_to_grid_1 DATA
+    ff_dca_scf_to_grid_2 DATA
+    ff_dca_set_channel_layout
+    ff_dca_st_coeff DATA
+    ff_dca_synth_env DATA
+    ff_dca_vlc_avg_g3 DATA
+    ff_dca_vlc_bit_allocation DATA
+    ff_dca_vlc_calc_alloc_bits
+    ff_dca_vlc_calc_quant_bits
+    ff_dca_vlc_damp DATA
+    ff_dca_vlc_dph DATA
+    ff_dca_vlc_enc_alloc
+    ff_dca_vlc_enc_quant
+    ff_dca_vlc_fst_rsd_amp DATA
+    ff_dca_vlc_grid_2 DATA
+    ff_dca_vlc_grid_3 DATA
+    ff_dca_vlc_quant_index DATA
+    ff_dca_vlc_rsd DATA
+    ff_dca_vlc_rsd_amp DATA
+    ff_dca_vlc_rsd_apprx DATA
+    ff_dca_vlc_scale_factor DATA
+    ff_dca_vlc_st_grid DATA
+    ff_dca_vlc_tnl_grp DATA
+    ff_dca_vlc_tnl_scf DATA
+    ff_dca_vlc_transition_mode DATA
+    ff_dca_xll_band_coeff DATA
+    ff_dca_xll_close
+    ff_dca_xll_filter_frame
+    ff_dca_xll_flush
+    ff_dca_xll_parse
+    ff_dca_xll_refl_coeff DATA
+    ff_dcadct_init
+    ff_dcadsp_init
+    ff_dct32_fixed
+    ff_dct32_float
+    ff_dct_encode_init
+    ff_dct_end
+    ff_dct_init
+    ff_dct_quantize_c
+    ff_dct_unquantize_h263_armv5te DATA
+    ff_dds_decoder DATA
+    ff_decode_10_pulses_35bits
+    ff_decode_block_coeffs_armv6 DATA
+    ff_decode_frame_props
+    ff_decode_pitch_lag
+    ff_decode_sbr_extension
+    ff_decode_sbr_extension_fixed
+    ff_default_chroma_qscale_table DATA
+    ff_dfa_decoder DATA
+    ff_diff_pixels_armv6 DATA
+    ff_dirac_decoder DATA
+    ff_dirac_default_qmat DATA
+    ff_dirac_golomb_read_16bit
+    ff_dirac_golomb_read_32bit
+    ff_dirac_golomb_reader_end
+    ff_dirac_golomb_reader_init
+    ff_dirac_init_arith_decoder
+    ff_dirac_init_arith_tables
+    ff_dirac_next_ctx DATA
+    ff_dirac_parser DATA
+    ff_dirac_prob DATA
+    ff_dirac_prob_branchless DATA
+    ff_dirac_qoffset_inter_tab DATA
+    ff_dirac_qoffset_intra_tab DATA
+    ff_dirac_qscale_tab DATA
+    ff_diracdsp_init
+    ff_dnxhd_cid_table DATA
+    ff_dnxhd_decoder DATA
+    ff_dnxhd_find_cid
+    ff_dnxhd_get_cid_table
+    ff_dnxhd_parser DATA
+    ff_dnxhd_print_profiles
+    ff_dot_product
+    ff_dot_productf
+    ff_dpx_decoder DATA
+    ff_dpx_parser DATA
+    ff_draw_horiz_band
+    ff_draw_pc_font
+    ff_dsd2pcm_translate
+    ff_dsd_lsbf_decoder DATA
+    ff_dsd_lsbf_planar_decoder DATA
+    ff_dsd_msbf_decoder DATA
+    ff_dsd_msbf_planar_decoder DATA
+    ff_dsicinaudio_decoder DATA
+    ff_dsicinvideo_decoder DATA
+    ff_dsputil_init_dwt
+    ff_dss_sp_decoder DATA
+    ff_dst_decoder DATA
+    ff_dump_extradata_bsf DATA
+    ff_dv_frame_profile
+    ff_dv_init_dynamic_tables
+    ff_dv_print_profiles
+    ff_dv_quant_offset DATA
+    ff_dv_quant_shifts DATA
+    ff_dv_rl_vlc DATA
+    ff_dv_vlc_bits DATA
+    ff_dv_vlc_len DATA
+    ff_dv_vlc_level DATA
+    ff_dv_vlc_run DATA
+    ff_dv_zigzag248_direct DATA
+    ff_dvaudio_decoder DATA
+    ff_dvaudio_parser DATA
+    ff_dvbsub_decoder DATA
+    ff_dvbsub_parser DATA
+    ff_dvd_nav_parser DATA
+    ff_dvdsub_decoder DATA
+    ff_dvdsub_parser DATA
+    ff_dvvideo_decoder DATA
+    ff_dvvideo_init
+    ff_dwt_decode
+    ff_dwt_destroy
+    ff_dwt_encode
+    ff_dwt_init
+    ff_dxtory_decoder DATA
+    ff_dxv_decoder DATA
+    ff_ea_idct_put_c
+    ff_eac3_bits_vs_hebap DATA
+    ff_eac3_decoder DATA
+    ff_eac3_default_chmap DATA
+    ff_eac3_default_cpl_band_struct DATA
+    ff_eac3_default_spx_band_struct DATA
+    ff_eac3_frm_expstr DATA
+    ff_eac3_gaq_remap_1 DATA
+    ff_eac3_gaq_remap_2_4_a DATA
+    ff_eac3_gaq_remap_2_4_b DATA
+    ff_eac3_hebap_tab DATA
+    ff_eac3_mantissa_vq DATA
+    ff_eac3_spx_atten_tab DATA
+    ff_eacmv_decoder DATA
+    ff_eamad_decoder DATA
+    ff_eatgq_decoder DATA
+    ff_eatgv_decoder DATA
+    ff_eatqi_decoder DATA
+    ff_ega_palette DATA
+    ff_eightbps_decoder DATA
+    ff_eightsvx_exp_decoder DATA
+    ff_eightsvx_fib_decoder DATA
+    ff_emulated_edge_mc_16
+    ff_emulated_edge_mc_8
+    ff_energy_tab DATA
+    ff_epzs_motion_search
+    ff_er_add_slice
+    ff_er_frame_end
+    ff_er_frame_start
+    ff_escape124_decoder DATA
+    ff_escape130_decoder DATA
+    ff_estimate_b_frame_motion
+    ff_estimate_p_frame_motion
+    ff_eval_coefs
+    ff_eval_refl
+    ff_evrc_decoder DATA
+    ff_exp2
+    ff_extract_extradata_bsf DATA
+    ff_faandct
+    ff_faandct248
+    ff_faanidct
+    ff_faanidct_add
+    ff_faanidct_put
+    ff_fc_2pulses_9bits_track1 DATA
+    ff_fc_2pulses_9bits_track1_gray DATA
+    ff_fc_2pulses_9bits_track2_gray DATA
+    ff_fc_4pulses_8bits_track_4 DATA
+    ff_fc_4pulses_8bits_tracks_13 DATA
+    ff_fdct248_islow_10
+    ff_fdct248_islow_8
+    ff_fdct_ifast
+    ff_fdct_ifast248
+    ff_fdctdsp_init
+    ff_fetch_timestamp
+    ff_fft_end
+    ff_fft_end_fixed
+    ff_fft_end_fixed_32
+    ff_fft_fixed_init_arm
+    ff_fft_init
+    ff_fft_init_arm
+    ff_fft_init_fixed
+    ff_fft_init_fixed_32
+    ff_fft_lut_init
+    ff_fft_offsets_lut DATA
+    ff_ffv1_allocate_initial_states
+    ff_ffv1_clear_slice_state
+    ff_ffv1_close
+    ff_ffv1_common_init
+    ff_ffv1_decoder DATA
+    ff_ffv1_init_slice_contexts
+    ff_ffv1_init_slice_state
+    ff_ffv1_init_slices_state
+    ff_ffvhuff_decoder DATA
+    ff_ffwavesynth_decoder DATA
+    ff_fic_decoder DATA
+    ff_find_unused_picture
+    ff_fix_long_mvs
+    ff_fix_long_p_mvs
+    ff_flac_blocksize_table DATA
+    ff_flac_decode_frame_header
+    ff_flac_decoder DATA
+    ff_flac_get_max_frame_size
+    ff_flac_is_extradata_valid
+    ff_flac_lpc_16_arm DATA
+    ff_flac_parse_streaminfo
+    ff_flac_parser DATA
+    ff_flac_sample_rate_table DATA
+    ff_flac_set_channel_layout
+    ff_flacdsp_init
+    ff_flacdsp_init_arm
+    ff_flic_decoder DATA
+    ff_flv_decode_picture_header
+    ff_flv_decoder DATA
+    ff_fmt_convert_init
+    ff_fmt_convert_init_arm
+    ff_fmvc_decoder DATA
+    ff_fourxm_decoder DATA
+    ff_fraps_decoder DATA
+    ff_free_picture_tables
+    ff_free_vlc
+    ff_frwu_decoder DATA
+    ff_g722_high_inv_quant DATA
+    ff_g722_low_inv_quant4 DATA
+    ff_g722_low_inv_quant6 DATA
+    ff_g722_update_high_predictor
+    ff_g722_update_low_predictor
+    ff_g722dsp_init
+    ff_g722dsp_init_arm
+    ff_g723_1_decoder DATA
+    ff_g723_1_dot_product
+    ff_g723_1_gen_acb_excitation
+    ff_g723_1_gen_dirac_train
+    ff_g723_1_get_residual
+    ff_g723_1_inverse_quant
+    ff_g723_1_lsp_interpolate
+    ff_g723_1_normalize_bits
+    ff_g723_1_scale_vector
+    ff_g729_adaptive_gain_control
+    ff_g729_decoder DATA
+    ff_g729_parser DATA
+    ff_g729_postfilter
+    ff_gain_exp_tab DATA
+    ff_gain_val_tab DATA
+    ff_get_2pass_fcode
+    ff_get_best_fcode
+    ff_get_buffer
+    ff_get_format
+    ff_get_mb_score
+    ff_get_pixels_armv6 DATA
+    ff_gif_decoder DATA
+    ff_gmc_c
+    ff_golomb_vlc_len DATA
+    ff_gsm_apcm_bits DATA
+    ff_gsm_decoder DATA
+    ff_gsm_dequant_tab DATA
+    ff_gsm_long_term_gain_tab DATA
+    ff_gsm_ms_decoder DATA
+    ff_gsm_parser DATA
+    ff_gsm_requant_tab DATA
+    ff_guess_coded_bitrate
+    ff_h261_cbp_tab DATA
+    ff_h261_common_init
+    ff_h261_decoder DATA
+    ff_h261_loop_filter
+    ff_h261_mba_bits DATA
+    ff_h261_mba_code DATA
+    ff_h261_mtype_bits DATA
+    ff_h261_mtype_code DATA
+    ff_h261_mtype_map DATA
+    ff_h261_mv_tab DATA
+    ff_h261_parser DATA
+    ff_h261_rl_table_store DATA
+    ff_h261_rl_tcoeff DATA
+    ff_h263_cbpy_tab DATA
+    ff_h263_cbpy_vlc DATA
+    ff_h263_chroma_qscale_table DATA
+    ff_h263_decode_end
+    ff_h263_decode_frame
+    ff_h263_decode_init
+    ff_h263_decode_init_vlc
+    ff_h263_decode_mb
+    ff_h263_decode_mba
+    ff_h263_decode_motion
+    ff_h263_decode_picture_header
+    ff_h263_decoder DATA
+    ff_h263_encoder DATA
+    ff_h263_find_frame_end
+    ff_h263_format DATA
+    ff_h263_hwaccel_pixfmt_list_420 DATA
+    ff_h263_inter_MCBPC_bits DATA
+    ff_h263_inter_MCBPC_code DATA
+    ff_h263_inter_MCBPC_vlc DATA
+    ff_h263_intra_MCBPC_bits DATA
+    ff_h263_intra_MCBPC_code DATA
+    ff_h263_intra_MCBPC_vlc DATA
+    ff_h263_loop_filter
+    ff_h263_loop_filter_strength DATA
+    ff_h263_mbtype_b_tab DATA
+    ff_h263_parser DATA
+    ff_h263_pixel_aspect DATA
+    ff_h263_pred_acdc
+    ff_h263_pred_dc
+    ff_h263_pred_motion
+    ff_h263_resync
+    ff_h263_rl_inter DATA
+    ff_h263_show_pict_info
+    ff_h263_static_rl_table_store DATA
+    ff_h263_update_motion_val
+    ff_h263dsp_init
+    ff_h263i_decoder DATA
+    ff_h263p_decoder DATA
+    ff_h263p_encoder DATA
+    ff_h2645_extract_rbsp
+    ff_h2645_packet_split
+    ff_h2645_packet_uninit
+    ff_h264_alloc_tables
+    ff_h264_b_mb_type_info DATA
+    ff_h264_b_sub_mb_type_info DATA
+    ff_h264_build_ref_list
+    ff_h264_cabac_tables DATA
+    ff_h264_check_intra4x4_pred_mode
+    ff_h264_check_intra_pred_mode
+    ff_h264_chroma422_dc_dequant_idct_10_c
+    ff_h264_chroma422_dc_dequant_idct_12_c
+    ff_h264_chroma422_dc_dequant_idct_14_c
+    ff_h264_chroma422_dc_dequant_idct_8_c
+    ff_h264_chroma422_dc_dequant_idct_9_c
+    ff_h264_chroma422_dc_scan DATA
+    ff_h264_chroma_dc_dequant_idct_10_c
+    ff_h264_chroma_dc_dequant_idct_12_c
+    ff_h264_chroma_dc_dequant_idct_14_c
+    ff_h264_chroma_dc_dequant_idct_8_c
+    ff_h264_chroma_dc_dequant_idct_9_c
+    ff_h264_chroma_dc_scan DATA
+    ff_h264_chroma_qp DATA
+    ff_h264_decode_extradata
+    ff_h264_decode_init
+    ff_h264_decode_init_vlc
+    ff_h264_decode_mb_cabac
+    ff_h264_decode_mb_cavlc
+    ff_h264_decode_picture_parameter_set
+    ff_h264_decode_ref_pic_list_reordering
+    ff_h264_decode_ref_pic_marking
+    ff_h264_decode_seq_parameter_set
+    ff_h264_decoder DATA
+    ff_h264_dequant4_coeff_init DATA
+    ff_h264_dequant8_coeff_init DATA
+    ff_h264_dequant8_coeff_init_scan DATA
+    ff_h264_direct_dist_scale_factor
+    ff_h264_direct_ref_list_init
+    ff_h264_draw_horiz_band
+    ff_h264_execute_decode_slices
+    ff_h264_execute_ref_pic_marking
+    ff_h264_field_end
+    ff_h264_filter_mb
+    ff_h264_filter_mb_fast
+    ff_h264_flush_change
+    ff_h264_free_tables
+    ff_h264_get_profile
+    ff_h264_get_slice_type
+    ff_h264_golomb_to_inter_cbp DATA
+    ff_h264_golomb_to_intra4x4_cbp DATA
+    ff_h264_golomb_to_pict_type DATA
+    ff_h264_hl_decode_mb
+    ff_h264_i_mb_type_info DATA
+    ff_h264_idct8_add4_10_c
+    ff_h264_idct8_add4_12_c
+    ff_h264_idct8_add4_14_c
+    ff_h264_idct8_add4_8_c
+    ff_h264_idct8_add4_9_c
+    ff_h264_idct8_add_10_c
+    ff_h264_idct8_add_12_c
+    ff_h264_idct8_add_14_c
+    ff_h264_idct8_add_8_c
+    ff_h264_idct8_add_9_c
+    ff_h264_idct8_dc_add_10_c
+    ff_h264_idct8_dc_add_12_c
+    ff_h264_idct8_dc_add_14_c
+    ff_h264_idct8_dc_add_8_c
+    ff_h264_idct8_dc_add_9_c
+    ff_h264_idct_add16_10_c
+    ff_h264_idct_add16_12_c
+    ff_h264_idct_add16_14_c
+    ff_h264_idct_add16_8_c
+    ff_h264_idct_add16_9_c
+    ff_h264_idct_add16intra_10_c
+    ff_h264_idct_add16intra_12_c
+    ff_h264_idct_add16intra_14_c
+    ff_h264_idct_add16intra_8_c
+    ff_h264_idct_add16intra_9_c
+    ff_h264_idct_add8_10_c
+    ff_h264_idct_add8_12_c
+    ff_h264_idct_add8_14_c
+    ff_h264_idct_add8_422_10_c
+    ff_h264_idct_add8_422_12_c
+    ff_h264_idct_add8_422_14_c
+    ff_h264_idct_add8_422_8_c
+    ff_h264_idct_add8_422_9_c
+    ff_h264_idct_add8_8_c
+    ff_h264_idct_add8_9_c
+    ff_h264_idct_add_10_c
+    ff_h264_idct_add_12_c
+    ff_h264_idct_add_14_c
+    ff_h264_idct_add_8_c
+    ff_h264_idct_add_9_c
+    ff_h264_idct_dc_add_10_c
+    ff_h264_idct_dc_add_12_c
+    ff_h264_idct_dc_add_14_c
+    ff_h264_idct_dc_add_8_c
+    ff_h264_idct_dc_add_9_c
+    ff_h264_init_cabac_states
+    ff_h264_init_poc
+    ff_h264_luma_dc_dequant_idct_10_c
+    ff_h264_luma_dc_dequant_idct_12_c
+    ff_h264_luma_dc_dequant_idct_14_c
+    ff_h264_luma_dc_dequant_idct_8_c
+    ff_h264_luma_dc_dequant_idct_9_c
+    ff_h264_mb_sizes DATA
+    ff_h264_mp4toannexb_bsf DATA
+    ff_h264_p_mb_type_info DATA
+    ff_h264_p_sub_mb_type_info DATA
+    ff_h264_parse_ref_count
+    ff_h264_parser DATA
+    ff_h264_pred_direct_motion
+    ff_h264_pred_init
+    ff_h264_pred_init_arm
+    ff_h264_pred_weight_table
+    ff_h264_ps_uninit
+    ff_h264_quant_div6 DATA
+    ff_h264_quant_rem6 DATA
+    ff_h264_queue_decode_slice
+    ff_h264_ref_picture
+    ff_h264_remove_all_refs
+    ff_h264_sei_decode
+    ff_h264_sei_stereo_mode
+    ff_h264_sei_uninit
+    ff_h264_set_erpic
+    ff_h264_slice_context_init
+    ff_h264_unref_picture
+    ff_h264_update_thread_context
+    ff_h264chroma_init
+    ff_h264chroma_init_arm
+    ff_h264dsp_init
+    ff_h264dsp_init_arm
+    ff_h264qpel_init
+    ff_h264qpel_init_arm
+    ff_hap_decoder DATA
+    ff_hap_free_context
+    ff_hap_set_chunk_count
+    ff_hevc_bump_frame
+    ff_hevc_cabac_init
+    ff_hevc_cbf_cb_cr_decode
+    ff_hevc_cbf_luma_decode
+    ff_hevc_clear_refs
+    ff_hevc_compute_poc
+    ff_hevc_cu_chroma_qp_offset_flag
+    ff_hevc_cu_chroma_qp_offset_idx
+    ff_hevc_cu_qp_delta_abs
+    ff_hevc_cu_qp_delta_sign_flag
+    ff_hevc_cu_transquant_bypass_flag_decode
+    ff_hevc_deblocking_boundary_strengths
+    ff_hevc_decode_nal_pps
+    ff_hevc_decode_nal_sei
+    ff_hevc_decode_nal_sps
+    ff_hevc_decode_nal_vps
+    ff_hevc_decode_short_term_rps
+    ff_hevc_decoder DATA
+    ff_hevc_diag_scan4x4_x DATA
+    ff_hevc_diag_scan4x4_y DATA
+    ff_hevc_diag_scan8x8_x DATA
+    ff_hevc_diag_scan8x8_y DATA
+    ff_hevc_dsp_init
+    ff_hevc_end_of_slice_flag_decode
+    ff_hevc_epel_filters DATA
+    ff_hevc_flush_dpb
+    ff_hevc_frame_nb_refs
+    ff_hevc_frame_rps
+    ff_hevc_get_ref_list
+    ff_hevc_hls_filter
+    ff_hevc_hls_filters
+    ff_hevc_hls_mvd_coding
+    ff_hevc_hls_residual_coding
+    ff_hevc_inter_pred_idc_decode
+    ff_hevc_intra_chroma_pred_mode_decode
+    ff_hevc_log2_res_scale_abs
+    ff_hevc_luma_mv_merge_mode
+    ff_hevc_luma_mv_mvp_mode
+    ff_hevc_merge_flag_decode
+    ff_hevc_merge_idx_decode
+    ff_hevc_mp4toannexb_bsf DATA
+    ff_hevc_mpm_idx_decode
+    ff_hevc_mvp_lx_flag_decode
+    ff_hevc_no_residual_syntax_flag_decode
+    ff_hevc_output_frame
+    ff_hevc_parse_sps
+    ff_hevc_parser DATA
+    ff_hevc_part_mode_decode
+    ff_hevc_pcm_flag_decode
+    ff_hevc_pel_weight DATA
+    ff_hevc_pred_init
+    ff_hevc_pred_mode_decode
+    ff_hevc_prev_intra_luma_pred_flag_decode
+    ff_hevc_qpel_filters DATA
+    ff_hevc_ref_idx_lx_decode
+    ff_hevc_rem_intra_luma_pred_mode_decode
+    ff_hevc_res_scale_sign_flag
+    ff_hevc_reset_sei
+    ff_hevc_sao_band_position_decode
+    ff_hevc_sao_eo_class_decode
+    ff_hevc_sao_merge_flag_decode
+    ff_hevc_sao_offset_abs_decode
+    ff_hevc_sao_offset_sign_decode
+    ff_hevc_sao_type_idx_decode
+    ff_hevc_save_states
+    ff_hevc_set_neighbour_available
+    ff_hevc_set_new_ref
+    ff_hevc_set_qPy
+    ff_hevc_skip_flag_decode
+    ff_hevc_slice_rpl
+    ff_hevc_split_coding_unit_flag_decode
+    ff_hevc_split_transform_flag_decode
+    ff_hevc_unref_frame
+    ff_hevcdsp_init_arm
+    ff_hnm4_video_decoder DATA
+    ff_hpeldsp_init
+    ff_hpeldsp_init_arm
+    ff_hpeldsp_init_armv6
+    ff_hq_ac_bits DATA
+    ff_hq_ac_codes DATA
+    ff_hq_ac_skips DATA
+    ff_hq_ac_syms DATA
+    ff_hq_hqa_decoder DATA
+    ff_hq_init_vlcs
+    ff_hq_profile DATA
+    ff_hq_quants DATA
+    ff_hqdsp_init
+    ff_hqx_ac DATA
+    ff_hqx_decoder DATA
+    ff_hqx_init_vlcs
+    ff_hqxdsp_init
+    ff_htmlmarkup_to_ass
+    ff_huff_build_tree
+    ff_huff_gen_len_table
+    ff_huffyuv_alloc_temp
+    ff_huffyuv_common_end
+    ff_huffyuv_common_init
+    ff_huffyuv_decoder DATA
+    ff_huffyuv_generate_bits_table
+    ff_huffyuvdsp_init
+    ff_iac_decoder DATA
+    ff_idcin_decoder DATA
+    ff_idctdsp_init
+    ff_idctdsp_init_arm
+    ff_idctdsp_init_armv5te
+    ff_idctdsp_init_armv6
+    ff_idf_decoder DATA
+    ff_iff_ilbm_decoder DATA
+    ff_imc_decoder DATA
+    ff_imdct36_blocks_fixed
+    ff_imdct36_blocks_float
+    ff_imdct_calc_c
+    ff_imdct_calc_c_fixed
+    ff_imdct_calc_c_fixed_32
+    ff_imdct_half_c
+    ff_imdct_half_c_fixed
+    ff_imdct_half_c_fixed_32
+    ff_imx_dump_header_bsf DATA
+    ff_indeo2_decoder DATA
+    ff_indeo3_decoder DATA
+    ff_indeo4_decoder DATA
+    ff_indeo5_decoder DATA
+    ff_init_2d_vlc_rl
+    ff_init_block_index
+    ff_init_buffer_info
+    ff_init_cabac_decoder
+    ff_init_cabac_encoder
+    ff_init_dsd_data
+    ff_init_ff_cos_tabs
+    ff_init_ff_cos_tabs_fixed
+    ff_init_ff_cos_tabs_fixed_32
+    ff_init_ff_sine_windows
+    ff_init_ff_sine_windows_fixed
+    ff_init_me
+    ff_init_mpadsp_tabs_fixed
+    ff_init_mpadsp_tabs_float
+    ff_init_qscale_tab
+    ff_init_range_decoder
+    ff_init_range_encoder
+    ff_init_scantable
+    ff_init_scantable_permutation
+    ff_init_vlc_sparse
+    ff_int_to_int16
+    ff_intel_h263_decode_picture_header
+    ff_inter_intra_vlc DATA
+    ff_inter_level DATA
+    ff_inter_run DATA
+    ff_inter_vlc DATA
+    ff_interleaved_dirac_golomb_vlc_code DATA
+    ff_interleaved_golomb_vlc_len DATA
+    ff_interleaved_se_golomb_vlc_code DATA
+    ff_interleaved_ue_golomb_vlc_code DATA
+    ff_interp
+    ff_interplay_acm_decoder DATA
+    ff_interplay_dpcm_decoder DATA
+    ff_interplay_video_decoder DATA
+    ff_intrax8_common_end
+    ff_intrax8_common_init
+    ff_intrax8_decode_picture
+    ff_intrax8dsp_init
+    ff_inv_aanscales DATA
+    ff_inverse DATA
+    ff_irms
+    ff_ivi_col_haar4
+    ff_ivi_col_haar8
+    ff_ivi_col_slant4
+    ff_ivi_col_slant8
+    ff_ivi_dc_col_slant
+    ff_ivi_dc_haar_2d
+    ff_ivi_dc_row_slant
+    ff_ivi_dc_slant_2d
+    ff_ivi_dec_huff_desc
+    ff_ivi_decode_close
+    ff_ivi_decode_frame
+    ff_ivi_direct_scan_4x4 DATA
+    ff_ivi_horizontal_scan_8x8 DATA
+    ff_ivi_init_planes
+    ff_ivi_init_static_vlc
+    ff_ivi_init_tiles
+    ff_ivi_inverse_haar_4x4
+    ff_ivi_inverse_haar_8x8
+    ff_ivi_inverse_slant_4x4
+    ff_ivi_inverse_slant_8x8
+    ff_ivi_mc_4x4_delta
+    ff_ivi_mc_4x4_no_delta
+    ff_ivi_mc_8x8_delta
+    ff_ivi_mc_8x8_no_delta
+    ff_ivi_mc_avg_4x4_delta
+    ff_ivi_mc_avg_4x4_no_delta
+    ff_ivi_mc_avg_8x8_delta
+    ff_ivi_mc_avg_8x8_no_delta
+    ff_ivi_put_dc_pixel_8x8
+    ff_ivi_put_pixels_8x8
+    ff_ivi_recompose53
+    ff_ivi_recompose_haar
+    ff_ivi_row_haar4
+    ff_ivi_row_haar8
+    ff_ivi_row_slant4
+    ff_ivi_row_slant8
+    ff_ivi_rvmap_tabs DATA
+    ff_ivi_vertical_scan_8x8 DATA
+    ff_j_rev_dct
+    ff_j_rev_dct1
+    ff_j_rev_dct2
+    ff_j_rev_dct4
+    ff_j_rev_dct_arm DATA
+    ff_jacosub_decoder DATA
+    ff_jpeg2000_cleanup
+    ff_jpeg2000_decoder DATA
+    ff_jpeg2000_dwt_init
+    ff_jpeg2000_init_component
+    ff_jpeg2000_init_tier1_luts
+    ff_jpeg2000_reinit
+    ff_jpeg2000_set_significance
+    ff_jpeg2000_sgnctxno_lut DATA
+    ff_jpeg2000_sigctxno_lut DATA
+    ff_jpeg2000_xorbit_lut DATA
+    ff_jpeg2000dsp_init
+    ff_jpeg_fdct_islow_10
+    ff_jpeg_fdct_islow_8
+    ff_jpegls_decode_lse
+    ff_jpegls_decode_picture
+    ff_jpegls_decoder DATA
+    ff_jpegls_init_state
+    ff_jpegls_reset_coding_parameters
+    ff_jref_idct_add
+    ff_jref_idct_put
+    ff_jv_decoder DATA
+    ff_kbd_window_init
+    ff_kbd_window_init_fixed
+    ff_kgv1_decoder DATA
+    ff_kmvc_decoder DATA
+    ff_lag_rac_init
+    ff_lagarith_decoder DATA
+    ff_list_bsf DATA
+    ff_llauddsp_init
+    ff_llauddsp_init_arm
+    ff_llviddsp_init
+    ff_lock_avcodec
+    ff_loco_decoder DATA
+    ff_log2_q15
+    ff_log2_run DATA
+    ff_log2_tab DATA
+    ff_lpc_refl_cb DATA
+    ff_lsp2polyf
+    ff_lzf_uncompress
+    ff_lzw_decode
+    ff_lzw_decode_close
+    ff_lzw_decode_init
+    ff_lzw_decode_open
+    ff_lzw_decode_tail
+    ff_m101_decoder DATA
+    ff_mace3_decoder DATA
+    ff_mace6_decoder DATA
+    ff_magicyuv_decoder DATA
+    ff_match_2uint16
+    ff_mb_btype_vlc DATA
+    ff_mb_non_intra_vlc DATA
+    ff_mb_pat_vlc DATA
+    ff_mb_ptype_vlc DATA
+    ff_mb_type_b_tab DATA
+    ff_mba_length DATA
+    ff_mba_max DATA
+    ff_mbincr_vlc DATA
+    ff_mdct15_init
+    ff_mdct15_uninit
+    ff_mdct_calc_c
+    ff_mdct_calc_c_fixed
+    ff_mdct_calc_c_fixed_32
+    ff_mdct_calcw_c
+    ff_mdct_end
+    ff_mdct_end_fixed
+    ff_mdct_end_fixed_32
+    ff_mdct_init
+    ff_mdct_init_fixed
+    ff_mdct_init_fixed_32
+    ff_mdct_win_fixed DATA
+    ff_mdct_win_float DATA
+    ff_mdec_decoder DATA
+    ff_me_cmp_init
+    ff_me_cmp_init_arm
+    ff_me_cmp_init_static
+    ff_metasound_decoder DATA
+    ff_metasound_mode0806 DATA
+    ff_metasound_mode0806s DATA
+    ff_metasound_mode0808 DATA
+    ff_metasound_mode0808s DATA
+    ff_metasound_mode1110 DATA
+    ff_metasound_mode1110s DATA
+    ff_metasound_mode1616 DATA
+    ff_metasound_mode1616s DATA
+    ff_metasound_mode2224 DATA
+    ff_metasound_mode2224s DATA
+    ff_metasound_mode4432 DATA
+    ff_metasound_mode4432s DATA
+    ff_metasound_mode4440 DATA
+    ff_metasound_mode4440s DATA
+    ff_metasound_mode4448 DATA
+    ff_metasound_mode4448s DATA
+    ff_microdvd_decoder DATA
+    ff_mimic_decoder DATA
+    ff_mjpeg2jpeg_bsf DATA
+    ff_mjpeg_build_huffman_codes
+    ff_mjpeg_decode_dht
+    ff_mjpeg_decode_dqt
+    ff_mjpeg_decode_end
+    ff_mjpeg_decode_frame
+    ff_mjpeg_decode_init
+    ff_mjpeg_decode_sof
+    ff_mjpeg_decode_sos
+    ff_mjpeg_decoder DATA
+    ff_mjpeg_encode_huffman_close
+    ff_mjpeg_encode_huffman_init
+    ff_mjpeg_find_marker
+    ff_mjpeg_parser DATA
+    ff_mjpega_dump_header_bsf DATA
+    ff_mjpegb_decoder DATA
+    ff_mjpegenc_huffman_compute_bits
+    ff_mlp_calculate_parity
+    ff_mlp_ch_info DATA
+    ff_mlp_channel_layouts DATA
+    ff_mlp_checksum16
+    ff_mlp_checksum8
+    ff_mlp_decoder DATA
+    ff_mlp_filter_channel_arm DATA
+    ff_mlp_huffman_tables DATA
+    ff_mlp_init_crc
+    ff_mlp_layout DATA
+    ff_mlp_pack_output
+    ff_mlp_pack_output_inorder_2ch_0shift_armv6 DATA
+    ff_mlp_pack_output_inorder_2ch_1shift_armv6 DATA
+    ff_mlp_pack_output_inorder_2ch_2shift_armv6 DATA
+    ff_mlp_pack_output_inorder_2ch_3shift_armv6 DATA
+    ff_mlp_pack_output_inorder_2ch_4shift_armv6 DATA
+    ff_mlp_pack_output_inorder_2ch_5shift_armv6 DATA
+    ff_mlp_pack_output_inorder_2ch_mixedshift_armv6 DATA
+    ff_mlp_pack_output_inorder_6ch_0shift_armv6 DATA
+    ff_mlp_pack_output_inorder_6ch_1shift_armv6 DATA
+    ff_mlp_pack_output_inorder_6ch_2shift_armv6 DATA
+    ff_mlp_pack_output_inorder_6ch_3shift_armv6 DATA
+    ff_mlp_pack_output_inorder_6ch_4shift_armv6 DATA
+    ff_mlp_pack_output_inorder_6ch_5shift_armv6 DATA
+    ff_mlp_pack_output_inorder_6ch_mixedshift_armv6 DATA
+    ff_mlp_pack_output_inorder_8ch_0shift_armv6 DATA
+    ff_mlp_pack_output_inorder_8ch_1shift_armv6 DATA
+    ff_mlp_pack_output_inorder_8ch_2shift_armv6 DATA
+    ff_mlp_pack_output_inorder_8ch_3shift_armv6 DATA
+    ff_mlp_pack_output_inorder_8ch_4shift_armv6 DATA
+    ff_mlp_pack_output_inorder_8ch_5shift_armv6 DATA
+    ff_mlp_pack_output_inorder_8ch_mixedshift_armv6 DATA
+    ff_mlp_pack_output_outoforder_2ch_0shift_armv6 DATA
+    ff_mlp_pack_output_outoforder_2ch_1shift_armv6 DATA
+    ff_mlp_pack_output_outoforder_2ch_2shift_armv6 DATA
+    ff_mlp_pack_output_outoforder_2ch_3shift_armv6 DATA
+    ff_mlp_pack_output_outoforder_2ch_4shift_armv6 DATA
+    ff_mlp_pack_output_outoforder_2ch_5shift_armv6 DATA
+    ff_mlp_pack_output_outoforder_6ch_0shift_armv6 DATA
+    ff_mlp_pack_output_outoforder_6ch_1shift_armv6 DATA
+    ff_mlp_pack_output_outoforder_6ch_2shift_armv6 DATA
+    ff_mlp_pack_output_outoforder_6ch_3shift_armv6 DATA
+    ff_mlp_pack_output_outoforder_6ch_4shift_armv6 DATA
+    ff_mlp_pack_output_outoforder_6ch_5shift_armv6 DATA
+    ff_mlp_pack_output_outoforder_8ch_0shift_armv6 DATA
+    ff_mlp_pack_output_outoforder_8ch_1shift_armv6 DATA
+    ff_mlp_pack_output_outoforder_8ch_2shift_armv6 DATA
+    ff_mlp_pack_output_outoforder_8ch_3shift_armv6 DATA
+    ff_mlp_pack_output_outoforder_8ch_4shift_armv6 DATA
+    ff_mlp_pack_output_outoforder_8ch_5shift_armv6 DATA
+    ff_mlp_parser DATA
+    ff_mlp_read_major_sync
+    ff_mlp_rematrix_channel
+    ff_mlp_rematrix_channel_arm DATA
+    ff_mlp_restart_checksum
+    ff_mlpdsp_init
+    ff_mlpdsp_init_arm
+    ff_mlz_decompression
+    ff_mlz_flush_dict
+    ff_mlz_init_dict
+    ff_mmvideo_decoder DATA
+    ff_modified_quant_tab DATA
+    ff_motionpixels_decoder DATA
+    ff_mov2textsub_bsf DATA
+    ff_movtext_decoder DATA
+    ff_mp1_decoder DATA
+    ff_mp1float_decoder DATA
+    ff_mp2_decoder DATA
+    ff_mp2float_decoder DATA
+    ff_mp3_decoder DATA
+    ff_mp3_header_decompress_bsf DATA
+    ff_mp3adu_decoder DATA
+    ff_mp3adufloat_decoder DATA
+    ff_mp3float_decoder DATA
+    ff_mp3on4_decoder DATA
+    ff_mp3on4float_decoder DATA
+    ff_mpa_alloc_tables DATA
+    ff_mpa_decode_header
+    ff_mpa_enwindow DATA
+    ff_mpa_l2_select_table
+    ff_mpa_quant_bits DATA
+    ff_mpa_quant_steps DATA
+    ff_mpa_sblimit_table DATA
+    ff_mpa_synth_filter_fixed
+    ff_mpa_synth_filter_float
+    ff_mpa_synth_init_fixed
+    ff_mpa_synth_init_float
+    ff_mpa_synth_window_fixed DATA
+    ff_mpa_synth_window_float DATA
+    ff_mpadsp_apply_window_fixed
+    ff_mpadsp_apply_window_fixed_armv6 DATA
+    ff_mpadsp_apply_window_float
+    ff_mpadsp_init
+    ff_mpadsp_init_arm
+    ff_mpc7_decoder DATA
+    ff_mpc8_decoder DATA
+    ff_mpc_dequantize_and_synth
+    ff_mpc_init
+    ff_mpeg12_common_init
+    ff_mpeg12_frame_rate_tab DATA
+    ff_mpeg12_init_vlcs
+    ff_mpeg12_mbAddrIncrTable DATA
+    ff_mpeg12_mbMotionVectorTable DATA
+    ff_mpeg12_mbPatTable DATA
+    ff_mpeg12_static_rl_table_store DATA
+    ff_mpeg12_vlc_dc_chroma_bits DATA
+    ff_mpeg12_vlc_dc_chroma_code DATA
+    ff_mpeg12_vlc_dc_lum_bits DATA
+    ff_mpeg12_vlc_dc_lum_code DATA
+    ff_mpeg1_aspect DATA
+    ff_mpeg1_clean_buffers
+    ff_mpeg1_dc_scale_table DATA
+    ff_mpeg1_decode_block_intra
+    ff_mpeg1_default_intra_matrix DATA
+    ff_mpeg1_default_non_intra_matrix DATA
+    ff_mpeg1_find_frame_end
+    ff_mpeg1video_decoder DATA
+    ff_mpeg2_aspect DATA
+    ff_mpeg2_dc_scale_table DATA
+    ff_mpeg2_frame_rate_tab DATA
+    ff_mpeg2_non_linear_qscale DATA
+    ff_mpeg2video_decoder DATA
+    ff_mpeg4_DCtab_chrom DATA
+    ff_mpeg4_DCtab_lum DATA
+    ff_mpeg4_c_dc_scale_table DATA
+    ff_mpeg4_clean_buffers
+    ff_mpeg4_dc_threshold DATA
+    ff_mpeg4_decode_partitions
+    ff_mpeg4_decode_picture_header
+    ff_mpeg4_decode_video_packet_header
+    ff_mpeg4_decoder DATA
+    ff_mpeg4_default_intra_matrix DATA
+    ff_mpeg4_default_non_intra_matrix DATA
+    ff_mpeg4_find_frame_end
+    ff_mpeg4_frame_end
+    ff_mpeg4_get_video_packet_prefix_length
+    ff_mpeg4_init_direct_mv
+    ff_mpeg4_intra_level DATA
+    ff_mpeg4_intra_run DATA
+    ff_mpeg4_intra_vlc DATA
+    ff_mpeg4_pred_ac
+    ff_mpeg4_resync_prefix DATA
+    ff_mpeg4_rl_intra DATA
+    ff_mpeg4_set_direct_mv
+    ff_mpeg4_static_rl_table_store DATA
+    ff_mpeg4_unpack_bframes_bsf DATA
+    ff_mpeg4_workaround_bugs
+    ff_mpeg4_y_dc_scale_table DATA
+    ff_mpeg4audio_channels DATA
+    ff_mpeg4audio_get_config_gb
+    ff_mpeg4video_parser DATA
+    ff_mpeg4video_split
+    ff_mpeg4videodec_static_init
+    ff_mpeg_draw_horiz_band
+    ff_mpeg_er_frame_start
+    ff_mpeg_er_init
+    ff_mpeg_flush
+    ff_mpeg_framesize_alloc
+    ff_mpeg_ref_picture
+    ff_mpeg_unref_picture
+    ff_mpeg_update_thread_context
+    ff_mpegaudio_parser DATA
+    ff_mpegvideo_decoder DATA
+    ff_mpegvideo_parser DATA
+    ff_mpegvideodsp_init
+    ff_mpegvideoencdsp_init
+    ff_mpegvideoencdsp_init_arm
+    ff_mpl2_decoder DATA
+    ff_mpv_common_defaults
+    ff_mpv_common_end
+    ff_mpv_common_frame_size_change
+    ff_mpv_common_init
+    ff_mpv_common_init_arm
+    ff_mpv_common_init_armv5te
+    ff_mpv_decode_defaults
+    ff_mpv_decode_init
+    ff_mpv_decode_mb
+    ff_mpv_encode_end
+    ff_mpv_encode_init
+    ff_mpv_encode_picture
+    ff_mpv_export_qp_table
+    ff_mpv_frame_end
+    ff_mpv_frame_start
+    ff_mpv_generic_options DATA
+    ff_mpv_idct_init
+    ff_mpv_motion
+    ff_mpv_reallocate_putbitbuffer
+    ff_mpv_report_decode_progress
+    ff_mqc_decode
+    ff_mqc_init_context_tables
+    ff_mqc_init_contexts
+    ff_mqc_initdec
+    ff_mqc_nlps DATA
+    ff_mqc_nmps DATA
+    ff_mqc_qe DATA
+    ff_msa1_decoder DATA
+    ff_msgsm_decode_block
+    ff_msmp4_dc_chroma_vlc DATA
+    ff_msmp4_dc_luma_vlc DATA
+    ff_msmp4_mb_i_table DATA
+    ff_msmp4_mb_i_vlc DATA
+    ff_msmpeg4_coded_block_pred
+    ff_msmpeg4_common_init
+    ff_msmpeg4_decode_block
+    ff_msmpeg4_decode_ext_header
+    ff_msmpeg4_decode_init
+    ff_msmpeg4_decode_motion
+    ff_msmpeg4_decode_picture_header
+    ff_msmpeg4_pred_dc
+    ff_msmpeg4v1_decoder DATA
+    ff_msmpeg4v2_decoder DATA
+    ff_msmpeg4v2_encoder DATA
+    ff_msmpeg4v3_decoder DATA
+    ff_msmpeg4v3_encoder DATA
+    ff_mspel_motion
+    ff_msrle_decode
+    ff_msrle_decoder DATA
+    ff_mss12_decode_end
+    ff_mss12_decode_init
+    ff_mss12_decode_rect
+    ff_mss12_model_update
+    ff_mss12_slicecontext_reset
+    ff_mss1_decoder DATA
+    ff_mss2_decoder DATA
+    ff_mss2dsp_init
+    ff_mss34_dct_put
+    ff_mss34_gen_quant_mat
+    ff_msvideo1_decoder DATA
+    ff_mszh_decoder DATA
+    ff_mts2_decoder DATA
+    ff_mv_tables DATA
+    ff_mv_vlc DATA
+    ff_mvc1_decoder DATA
+    ff_mvc2_decoder DATA
+    ff_mvtab DATA
+    ff_mxpeg_decoder DATA
+    ff_nelly_band_sizes_table DATA
+    ff_nelly_delta_table DATA
+    ff_nelly_dequantization_table DATA
+    ff_nelly_get_sample_bits
+    ff_nelly_init_table DATA
+    ff_nellymoser_decoder DATA
+    ff_noise_bsf DATA
+    ff_nuv_decoder DATA
+    ff_obmc_tab DATA
+    ff_old_ff_y_dc_scale_table DATA
+    ff_on2avc_ctab_1 DATA
+    ff_on2avc_ctab_2 DATA
+    ff_on2avc_ctab_3 DATA
+    ff_on2avc_ctab_4 DATA
+    ff_on2avc_decoder DATA
+    ff_on2avc_modes_40 DATA
+    ff_on2avc_modes_44 DATA
+    ff_on2avc_pair_cb_bits DATA
+    ff_on2avc_pair_cb_codes DATA
+    ff_on2avc_pair_cb_elems DATA
+    ff_on2avc_pair_cb_syms DATA
+    ff_on2avc_quad_cb_bits DATA
+    ff_on2avc_quad_cb_codes DATA
+    ff_on2avc_quad_cb_elems DATA
+    ff_on2avc_quad_cb_syms DATA
+    ff_on2avc_scale_diff_bits DATA
+    ff_on2avc_scale_diff_codes DATA
+    ff_on2avc_tab_10_1 DATA
+    ff_on2avc_tab_10_2 DATA
+    ff_on2avc_tab_20_1 DATA
+    ff_on2avc_tab_20_2 DATA
+    ff_on2avc_tab_40_1 DATA
+    ff_on2avc_tab_40_2 DATA
+    ff_on2avc_tab_84_1 DATA
+    ff_on2avc_tab_84_2 DATA
+    ff_on2avc_tab_84_3 DATA
+    ff_on2avc_tab_84_4 DATA
+    ff_on2avc_tabs_19_40_1 DATA
+    ff_on2avc_tabs_19_40_2 DATA
+    ff_on2avc_tabs_20_84_1 DATA
+    ff_on2avc_tabs_20_84_2 DATA
+    ff_on2avc_tabs_20_84_3 DATA
+    ff_on2avc_tabs_20_84_4 DATA
+    ff_on2avc_tabs_4_10_1 DATA
+    ff_on2avc_tabs_4_10_2 DATA
+    ff_on2avc_tabs_9_20_1 DATA
+    ff_on2avc_tabs_9_20_2 DATA
+    ff_on2avc_window_long_24000 DATA
+    ff_on2avc_window_long_32000 DATA
+    ff_on2avc_window_short DATA
+    ff_opus_decoder DATA
+    ff_opus_default_coupled_streams DATA
+    ff_opus_parse_extradata
+    ff_opus_parse_packet
+    ff_opus_parser DATA
+    ff_opus_rc_dec_cdf
+    ff_opus_rc_dec_init
+    ff_opus_rc_dec_laplace
+    ff_opus_rc_dec_log
+    ff_opus_rc_dec_raw_init
+    ff_opus_rc_dec_uint
+    ff_opus_rc_dec_uint_step
+    ff_opus_rc_dec_uint_tri
+    ff_opus_rc_enc_cdf
+    ff_opus_rc_enc_end
+    ff_opus_rc_enc_init
+    ff_opus_rc_enc_laplace
+    ff_opus_rc_enc_log
+    ff_opus_rc_enc_uint
+    ff_opus_rc_enc_uint_step
+    ff_opus_rc_enc_uint_tri
+    ff_opus_rc_get_raw
+    ff_opus_rc_put_raw
+    ff_paf_audio_decoder DATA
+    ff_paf_video_decoder DATA
+    ff_pam_decoder DATA
+    ff_parse_close
+    ff_pbm_decoder DATA
+    ff_pcm_alaw_decoder DATA
+    ff_pcm_bluray_decoder DATA
+    ff_pcm_dvd_decoder DATA
+    ff_pcm_f16le_decoder DATA
+    ff_pcm_f24le_decoder DATA
+    ff_pcm_f32be_decoder DATA
+    ff_pcm_f32le_decoder DATA
+    ff_pcm_f64be_decoder DATA
+    ff_pcm_f64le_decoder DATA
+    ff_pcm_lxf_decoder DATA
+    ff_pcm_mulaw_decoder DATA
+    ff_pcm_s16be_decoder DATA
+    ff_pcm_s16be_planar_decoder DATA
+    ff_pcm_s16le_decoder DATA
+    ff_pcm_s16le_planar_decoder DATA
+    ff_pcm_s24be_decoder DATA
+    ff_pcm_s24daud_decoder DATA
+    ff_pcm_s24le_decoder DATA
+    ff_pcm_s24le_planar_decoder DATA
+    ff_pcm_s32be_decoder DATA
+    ff_pcm_s32le_decoder DATA
+    ff_pcm_s32le_planar_decoder DATA
+    ff_pcm_s64be_decoder DATA
+    ff_pcm_s64le_decoder DATA
+    ff_pcm_s8_decoder DATA
+    ff_pcm_s8_planar_decoder DATA
+    ff_pcm_u16be_decoder DATA
+    ff_pcm_u16le_decoder DATA
+    ff_pcm_u24be_decoder DATA
+    ff_pcm_u24le_decoder DATA
+    ff_pcm_u32be_decoder DATA
+    ff_pcm_u32le_decoder DATA
+    ff_pcm_u8_decoder DATA
+    ff_pcm_zork_decoder DATA
+    ff_pcx_decoder DATA
+    ff_pgm_decoder DATA
+    ff_pgmyuv_decoder DATA
+    ff_pgssub_decoder DATA
+    ff_pictor_decoder DATA
+    ff_pix_abs16_armv6 DATA
+    ff_pix_abs16_x2_armv6 DATA
+    ff_pix_abs16_y2_armv6 DATA
+    ff_pix_abs8_armv6 DATA
+    ff_pix_norm1_armv6 DATA
+    ff_pix_sum_armv6 DATA
+    ff_pixblockdsp_init
+    ff_pixblockdsp_init_arm
+    ff_pixlet_decoder DATA
+    ff_pjs_decoder DATA
+    ff_png_parser DATA
+    ff_pnm_decode_header
+    ff_pnm_parser DATA
+    ff_pow_0_5 DATA
+    ff_pow_0_55 DATA
+    ff_pow_0_7 DATA
+    ff_pow_0_75 DATA
+    ff_ppm_decoder DATA
+    ff_pre_estimate_p_frame_motion
+    ff_prefetch_arm DATA
+    ff_print_debug_info
+    ff_print_debug_info2
+    ff_prores_ac_codebook DATA
+    ff_prores_dc_codebook DATA
+    ff_prores_decoder DATA
+    ff_prores_idct
+    ff_prores_interlaced_scan DATA
+    ff_prores_lev_to_cb_index DATA
+    ff_prores_lgpl_decoder DATA
+    ff_prores_progressive_scan DATA
+    ff_prores_run_to_cb_index DATA
+    ff_proresdsp_init
+    ff_ps_apply
+    ff_ps_apply_fixed
+    ff_ps_ctx_init
+    ff_ps_ctx_init_fixed
+    ff_ps_init
+    ff_ps_init_fixed
+    ff_ps_read_data
+    ff_ps_read_data_fixed
+    ff_psd_decoder DATA
+    ff_psdsp_init
+    ff_psdsp_init_arm
+    ff_psdsp_init_fixed
+    ff_ptx_decoder DATA
+    ff_put_dirac_pixels16_c
+    ff_put_dirac_pixels16_l2_c
+    ff_put_dirac_pixels16_l4_c
+    ff_put_dirac_pixels32_c
+    ff_put_dirac_pixels32_l2_c
+    ff_put_dirac_pixels32_l4_c
+    ff_put_dirac_pixels8_c
+    ff_put_dirac_pixels8_l2_c
+    ff_put_dirac_pixels8_l4_c
+    ff_put_no_rnd_pixels8_x2_arm DATA
+    ff_put_no_rnd_pixels8_xy2_arm DATA
+    ff_put_no_rnd_pixels8_y2_arm DATA
+    ff_put_no_rnd_qpel16_mc11_old_c
+    ff_put_no_rnd_qpel16_mc12_old_c
+    ff_put_no_rnd_qpel16_mc13_old_c
+    ff_put_no_rnd_qpel16_mc31_old_c
+    ff_put_no_rnd_qpel16_mc32_old_c
+    ff_put_no_rnd_qpel16_mc33_old_c
+    ff_put_no_rnd_qpel8_mc11_old_c
+    ff_put_no_rnd_qpel8_mc12_old_c
+    ff_put_no_rnd_qpel8_mc13_old_c
+    ff_put_no_rnd_qpel8_mc31_old_c
+    ff_put_no_rnd_qpel8_mc32_old_c
+    ff_put_no_rnd_qpel8_mc33_old_c
+    ff_put_pixels16_arm DATA
+    ff_put_pixels16_armv6 DATA
+    ff_put_pixels16_x2_armv6 DATA
+    ff_put_pixels16_x2_no_rnd_armv6 DATA
+    ff_put_pixels16_y2_armv6 DATA
+    ff_put_pixels16_y2_no_rnd_armv6 DATA
+    ff_put_pixels16x16_c
+    ff_put_pixels8_arm DATA
+    ff_put_pixels8_armv6 DATA
+    ff_put_pixels8_l2_8
+    ff_put_pixels8_x2_arm DATA
+    ff_put_pixels8_x2_armv6 DATA
+    ff_put_pixels8_x2_no_rnd_armv6 DATA
+    ff_put_pixels8_xy2_arm DATA
+    ff_put_pixels8_y2_arm DATA
+    ff_put_pixels8_y2_armv6 DATA
+    ff_put_pixels8_y2_no_rnd_armv6 DATA
+    ff_put_pixels8x8_c
+    ff_put_pixels_clamped DATA
+    ff_put_qpel16_mc11_old_c
+    ff_put_qpel16_mc12_old_c
+    ff_put_qpel16_mc13_old_c
+    ff_put_qpel16_mc31_old_c
+    ff_put_qpel16_mc32_old_c
+    ff_put_qpel16_mc33_old_c
+    ff_put_qpel8_mc11_old_c
+    ff_put_qpel8_mc12_old_c
+    ff_put_qpel8_mc13_old_c
+    ff_put_qpel8_mc31_old_c
+    ff_put_qpel8_mc32_old_c
+    ff_put_qpel8_mc33_old_c
+    ff_put_vp8_bilin16_h_armv6 DATA
+    ff_put_vp8_bilin16_hv_armv6 DATA
+    ff_put_vp8_bilin16_v_armv6 DATA
+    ff_put_vp8_bilin4_h_armv6 DATA
+    ff_put_vp8_bilin4_hv_armv6 DATA
+    ff_put_vp8_bilin4_v_armv6 DATA
+    ff_put_vp8_bilin8_h_armv6 DATA
+    ff_put_vp8_bilin8_hv_armv6 DATA
+    ff_put_vp8_bilin8_v_armv6 DATA
+    ff_put_vp8_epel16_h6_armv6 DATA
+    ff_put_vp8_epel16_h6v6_armv6 DATA
+    ff_put_vp8_epel16_v6_armv6 DATA
+    ff_put_vp8_epel4_h4_armv6 DATA
+    ff_put_vp8_epel4_h4v4_armv6 DATA
+    ff_put_vp8_epel4_h4v6_armv6 DATA
+    ff_put_vp8_epel4_h6_armv6 DATA
+    ff_put_vp8_epel4_h6v4_armv6 DATA
+    ff_put_vp8_epel4_h6v6_armv6 DATA
+    ff_put_vp8_epel4_v4_armv6 DATA
+    ff_put_vp8_epel4_v6_armv6 DATA
+    ff_put_vp8_epel8_h4_armv6 DATA
+    ff_put_vp8_epel8_h4v4_armv6 DATA
+    ff_put_vp8_epel8_h4v6_armv6 DATA
+    ff_put_vp8_epel8_h6_armv6 DATA
+    ff_put_vp8_epel8_h6v4_armv6 DATA
+    ff_put_vp8_epel8_h6v6_armv6 DATA
+    ff_put_vp8_epel8_v4_armv6 DATA
+    ff_put_vp8_epel8_v6_armv6 DATA
+    ff_put_vp8_pixels16_armv6 DATA
+    ff_put_vp8_pixels4_armv6 DATA
+    ff_put_vp8_pixels8_armv6 DATA
+    ff_qcelp_decoder DATA
+    ff_qdm2_decoder DATA
+    ff_qdmc_decoder DATA
+    ff_qdraw_decoder DATA
+    ff_qexp DATA
+    ff_qpeg_decoder DATA
+    ff_qpeldsp_init
+    ff_qtrle_decoder DATA
+    ff_quant3bA DATA
+    ff_r10k_decoder DATA
+    ff_r210_decoder DATA
+    ff_ra_144_decoder DATA
+    ff_ra_288_decoder DATA
+    ff_rac_terminate
+    ff_ralf_decoder DATA
+    ff_rate_control_init
+    ff_rate_control_uninit
+    ff_rate_estimate_qscale
+    ff_raw_pix_fmt_tags DATA
+    ff_rawvideo_decoder DATA
+    ff_rdft_end
+    ff_rdft_init
+    ff_rdft_init_arm
+    ff_realtext_decoder DATA
+    ff_reget_buffer
+    ff_remove_extradata_bsf DATA
+    ff_rescale_rms
+    ff_reset_entries
+    ff_reverse DATA
+    ff_rl2_decoder DATA
+    ff_rl_free
+    ff_rl_init
+    ff_rl_init_vlc
+    ff_rl_intra_aic DATA
+    ff_rl_mpeg1 DATA
+    ff_rl_mpeg2 DATA
+    ff_rl_table DATA
+    ff_rms
+    ff_roq_decoder DATA
+    ff_roq_dpcm_decoder DATA
+    ff_rpza_decoder DATA
+    ff_rtjpeg_decode_frame_yuv420
+    ff_rtjpeg_decode_init
+    ff_rtjpeg_init
+    ff_rv10_decoder DATA
+    ff_rv20_decoder DATA
+    ff_rv30_decoder DATA
+    ff_rv30_parser DATA
+    ff_rv30dsp_init
+    ff_rv34_decode_end
+    ff_rv34_decode_frame
+    ff_rv34_decode_init
+    ff_rv34_decode_init_thread_copy
+    ff_rv34_decode_update_thread_context
+    ff_rv34_get_start_offset
+    ff_rv34dsp_init
+    ff_rv34dsp_init_arm
+    ff_rv40_decoder DATA
+    ff_rv40_parser DATA
+    ff_rv40dsp_init
+    ff_rv40dsp_init_arm
+    ff_rv_decode_dc
+    ff_rvlc_rl_inter DATA
+    ff_rvlc_rl_intra DATA
+    ff_s302m_decoder DATA
+    ff_sami_decoder DATA
+    ff_sanm_decoder DATA
+    ff_sbr_apply
+    ff_sbr_apply_fixed
+    ff_sbr_noise_table DATA
+    ff_sbr_noise_table_fixed DATA
+    ff_sbrdsp_init
+    ff_sbrdsp_init_arm
+    ff_sbrdsp_init_fixed
+    ff_scale_mv_ref DATA
+    ff_scale_vector_to_given_sum_of_squares
+    ff_scpr_decoder DATA
+    ff_sdx2_dpcm_decoder DATA
+    ff_se_golomb_vlc_code DATA
+    ff_set_cmp
+    ff_set_dimensions
+    ff_set_fixed_vector
+    ff_set_min_dist_lsf
+    ff_set_qscale
+    ff_set_sar
+    ff_sgi_decoder DATA
+    ff_sgirle_decoder DATA
+    ff_sheervideo_decoder DATA
+    ff_shorten_decoder DATA
+    ff_side_data_set_encoder_stats
+    ff_side_data_update_matrix_encoding
+    ff_silk_cosine DATA
+    ff_silk_decode_superframe
+    ff_silk_flush
+    ff_silk_free
+    ff_silk_init
+    ff_silk_lsf_codebook_nbmb DATA
+    ff_silk_lsf_codebook_wb DATA
+    ff_silk_lsf_min_spacing_nbmb DATA
+    ff_silk_lsf_min_spacing_wb DATA
+    ff_silk_lsf_ordering_nbmb DATA
+    ff_silk_lsf_ordering_wb DATA
+    ff_silk_lsf_pred_weights_nbmb DATA
+    ff_silk_lsf_pred_weights_wb DATA
+    ff_silk_lsf_s2_model_sel_nbmb DATA
+    ff_silk_lsf_s2_model_sel_wb DATA
+    ff_silk_lsf_weight_sel_nbmb DATA
+    ff_silk_lsf_weight_sel_wb DATA
+    ff_silk_ltp_filter0_taps DATA
+    ff_silk_ltp_filter1_taps DATA
+    ff_silk_ltp_filter2_taps DATA
+    ff_silk_ltp_scale_factor DATA
+    ff_silk_model_exc_rate DATA
+    ff_silk_model_excitation_lsb DATA
+    ff_silk_model_excitation_sign DATA
+    ff_silk_model_frame_type_active DATA
+    ff_silk_model_frame_type_inactive DATA
+    ff_silk_model_gain_delta DATA
+    ff_silk_model_gain_highbits DATA
+    ff_silk_model_gain_lowbits DATA
+    ff_silk_model_lcg_seed DATA
+    ff_silk_model_lsf_interpolation_offset DATA
+    ff_silk_model_lsf_s1 DATA
+    ff_silk_model_lsf_s2 DATA
+    ff_silk_model_lsf_s2_ext DATA
+    ff_silk_model_ltp_filter DATA
+    ff_silk_model_ltp_filter0_sel DATA
+    ff_silk_model_ltp_filter1_sel DATA
+    ff_silk_model_ltp_filter2_sel DATA
+    ff_silk_model_ltp_scale_index DATA
+    ff_silk_model_mid_only DATA
+    ff_silk_model_pitch_contour_mbwb10ms DATA
+    ff_silk_model_pitch_contour_mbwb20ms DATA
+    ff_silk_model_pitch_contour_nb10ms DATA
+    ff_silk_model_pitch_contour_nb20ms DATA
+    ff_silk_model_pitch_delta DATA
+    ff_silk_model_pitch_highbits DATA
+    ff_silk_model_pitch_lowbits_mb DATA
+    ff_silk_model_pitch_lowbits_nb DATA
+    ff_silk_model_pitch_lowbits_wb DATA
+    ff_silk_model_pulse_count DATA
+    ff_silk_model_pulse_location DATA
+    ff_silk_model_stereo_s1 DATA
+    ff_silk_model_stereo_s2 DATA
+    ff_silk_model_stereo_s3 DATA
+    ff_silk_pitch_max_lag DATA
+    ff_silk_pitch_min_lag DATA
+    ff_silk_pitch_offset_mbwb10ms DATA
+    ff_silk_pitch_offset_mbwb20ms DATA
+    ff_silk_pitch_offset_nb10ms DATA
+    ff_silk_pitch_offset_nb20ms DATA
+    ff_silk_pitch_scale DATA
+    ff_silk_quant_offset DATA
+    ff_silk_shell_blocks DATA
+    ff_silk_stereo_interp_len DATA
+    ff_silk_stereo_weights DATA
+    ff_simple_idct248_put
+    ff_simple_idct44_add
+    ff_simple_idct48_add
+    ff_simple_idct84_add
+    ff_simple_idct_10
+    ff_simple_idct_12
+    ff_simple_idct_8
+    ff_simple_idct_add_10
+    ff_simple_idct_add_12
+    ff_simple_idct_add_8
+    ff_simple_idct_add_armv5te DATA
+    ff_simple_idct_add_armv6 DATA
+    ff_simple_idct_arm DATA
+    ff_simple_idct_armv5te DATA
+    ff_simple_idct_armv6 DATA
+    ff_simple_idct_put_10
+    ff_simple_idct_put_12
+    ff_simple_idct_put_8
+    ff_simple_idct_put_armv5te DATA
+    ff_simple_idct_put_armv6 DATA
+    ff_sin_1024 DATA
+    ff_sin_128 DATA
+    ff_sin_16 DATA
+    ff_sin_16384 DATA
+    ff_sin_2048 DATA
+    ff_sin_256 DATA
+    ff_sin_32 DATA
+    ff_sin_32768 DATA
+    ff_sin_4096 DATA
+    ff_sin_512 DATA
+    ff_sin_64 DATA
+    ff_sin_65536 DATA
+    ff_sin_8192 DATA
+    ff_sine_1024 DATA
+    ff_sine_1024_fixed DATA
+    ff_sine_128 DATA
+    ff_sine_128_fixed DATA
+    ff_sine_2048 DATA
+    ff_sine_2048_fixed DATA
+    ff_sine_256 DATA
+    ff_sine_256_fixed DATA
+    ff_sine_32 DATA
+    ff_sine_32_fixed DATA
+    ff_sine_4096 DATA
+    ff_sine_4096_fixed DATA
+    ff_sine_512 DATA
+    ff_sine_512_fixed DATA
+    ff_sine_64 DATA
+    ff_sine_64_fixed DATA
+    ff_sine_8192 DATA
+    ff_sine_8192_fixed DATA
+    ff_sine_window_init
+    ff_sine_window_init_fixed
+    ff_sine_windows DATA
+    ff_sine_windows_fixed DATA
+    ff_sipr_decode_frame_16k
+    ff_sipr_decoder DATA
+    ff_sipr_init_16k
+    ff_sipr_parser DATA
+    ff_slice_buffer_destroy
+    ff_slice_buffer_flush
+    ff_slice_buffer_init
+    ff_slice_buffer_load_line
+    ff_slice_buffer_release
+    ff_smackaud_decoder DATA
+    ff_smacker_decoder DATA
+    ff_smc_decoder DATA
+    ff_smvjpeg_decoder DATA
+    ff_snappy_peek_uncompressed_length
+    ff_snappy_uncompress
+    ff_snow_alloc_blocks
+    ff_snow_common_end
+    ff_snow_common_init
+    ff_snow_common_init_after_header
+    ff_snow_decoder DATA
+    ff_snow_frame_start
+    ff_snow_get_buffer
+    ff_snow_horizontal_compose97i
+    ff_snow_inner_add_yblock
+    ff_snow_pred_block
+    ff_snow_release_buffer
+    ff_snow_reset_contexts
+    ff_snow_vertical_compose97i
+    ff_sol_dpcm_decoder DATA
+    ff_sonic_decoder DATA
+    ff_sort_nearly_sorted_floats
+    ff_sp5x_decoder DATA
+    ff_spatial_dwt
+    ff_spatial_idwt
+    ff_spatial_idwt_buffered_init
+    ff_spatial_idwt_buffered_slice
+    ff_spatial_idwt_init
+    ff_spatial_idwt_slice2
+    ff_speedhq_decoder DATA
+    ff_sprite_trajectory_tab DATA
+    ff_sqrt_tab DATA
+    ff_square_tab DATA
+    ff_srt_decoder DATA
+    ff_ssa_decoder DATA
+    ff_sse16_armv6 DATA
+    ff_startcode_find_candidate_armv6 DATA
+    ff_startcode_find_candidate_c
+    ff_static_rl_table_store DATA
+    ff_stl_decoder DATA
+    ff_subblock_synthesis
+    ff_subrip_decoder DATA
+    ff_subviewer1_decoder DATA
+    ff_subviewer_decoder DATA
+    ff_sunrast_decoder DATA
+    ff_svq1_block_type_vlc DATA
+    ff_svq1_decoder DATA
+    ff_svq1_frame_size_table DATA
+    ff_svq1_inter_codebooks DATA
+    ff_svq1_inter_mean_vlc DATA
+    ff_svq1_inter_multistage_vlc DATA
+    ff_svq1_intra_codebooks DATA
+    ff_svq1_intra_mean_vlc DATA
+    ff_svq1_intra_multistage_vlc DATA
+    ff_svq1_packet_checksum
+    ff_svq3_decoder DATA
+    ff_swb_offset_1024 DATA
+    ff_swb_offset_128 DATA
+    ff_swb_offset_480 DATA
+    ff_swb_offset_512 DATA
+    ff_synth_filter_init
+    ff_synth_filter_init_arm
+    ff_t_sqrt
+    ff_table0_dc_chroma DATA
+    ff_table0_dc_lum DATA
+    ff_table1_dc_chroma DATA
+    ff_table1_dc_lum DATA
+    ff_table_inter_intra DATA
+    ff_table_mb_non_intra DATA
+    ff_tadd_bytes_metadata
+    ff_tadd_doubles_metadata
+    ff_tadd_long_metadata
+    ff_tadd_rational_metadata
+    ff_tadd_shorts_metadata
+    ff_tadd_string_metadata
+    ff_tak_check_crc
+    ff_tak_decode_frame_header
+    ff_tak_decoder DATA
+    ff_tak_parser DATA
+    ff_takdsp_init
+    ff_targa_decoder DATA
+    ff_targa_y216_decoder DATA
+    ff_tdecode_header
+    ff_text2movsub_bsf DATA
+    ff_text_decoder DATA
+    ff_texturedsp_init
+    ff_tget
+    ff_tget_double
+    ff_tget_long
+    ff_tget_short
+    ff_theora_decoder DATA
+    ff_thp_decoder DATA
+    ff_thread_await_progress
+    ff_thread_await_progress2
+    ff_thread_can_start_frame
+    ff_thread_finish_setup
+    ff_thread_get_buffer
+    ff_thread_get_format
+    ff_thread_init
+    ff_thread_ref_frame
+    ff_thread_release_buffer
+    ff_thread_report_progress
+    ff_thread_report_progress2
+    ff_tiertexseqvideo_decoder DATA
+    ff_tiff_angular_unit_codes DATA
+    ff_tiff_conf_name_type_map DATA
+    ff_tiff_coord_trans_codes DATA
+    ff_tiff_decoder DATA
+    ff_tiff_ellipsoid_codes DATA
+    ff_tiff_gcs_type_codes DATA
+    ff_tiff_gcse_type_codes DATA
+    ff_tiff_geodetic_datum_codes DATA
+    ff_tiff_geodetic_datum_e_codes DATA
+    ff_tiff_geog_name_type_map DATA
+    ff_tiff_gt_model_type_codes DATA
+    ff_tiff_gt_raster_type_codes DATA
+    ff_tiff_linear_unit_codes DATA
+    ff_tiff_ortho_vert_cs_codes DATA
+    ff_tiff_prime_meridian_codes DATA
+    ff_tiff_proj_cs_type_codes DATA
+    ff_tiff_proj_name_type_map DATA
+    ff_tiff_projection_codes DATA
+    ff_tiff_vert_cs_codes DATA
+    ff_tiff_vert_name_type_map DATA
+    ff_tilt_compensation
+    ff_tis_ifd
+    ff_tmv_decoder DATA
+    ff_tns_max_bands_1024 DATA
+    ff_tns_max_bands_128 DATA
+    ff_tns_max_bands_480 DATA
+    ff_tns_max_bands_512 DATA
+    ff_tpeldsp_init
+    ff_tread_tag
+    ff_truehd_decoder DATA
+    ff_truehd_layout
+    ff_truemotion1_decoder DATA
+    ff_truemotion2_decoder DATA
+    ff_truemotion2rt_decoder DATA
+    ff_truespeech_decoder DATA
+    ff_tscc2_decoder DATA
+    ff_tta_decoder DATA
+    ff_tta_filter_configs DATA
+    ff_tta_filter_init
+    ff_tta_rice_init
+    ff_tta_shift_1 DATA
+    ff_tta_shift_16 DATA
+    ff_ttadsp_init
+    ff_twinvq_decode_close
+    ff_twinvq_decode_frame
+    ff_twinvq_decode_init
+    ff_twinvq_decoder DATA
+    ff_twinvq_wtype_to_ftype_table DATA
+    ff_txd_decoder DATA
+    ff_ue_golomb_len DATA
+    ff_ue_golomb_vlc_code DATA
+    ff_ulti_decoder DATA
+    ff_unlock_avcodec
+    ff_update_duplicate_context
+    ff_update_picture_tables
+    ff_ut10_huff_cmp_len
+    ff_ut_huff_cmp_len
+    ff_ut_pred_order DATA
+    ff_ut_rgb_order DATA
+    ff_utvideo_decoder DATA
+    ff_v210_decoder DATA
+    ff_v210x_decoder DATA
+    ff_v2_dc_chroma_table DATA
+    ff_v2_dc_lum_table DATA
+    ff_v2_intra_cbpc DATA
+    ff_v2_mb_type DATA
+    ff_v308_decoder DATA
+    ff_v408_decoder DATA
+    ff_v410_decoder DATA
+    ff_vb_decoder DATA
+    ff_vble_decoder DATA
+    ff_vbv_update
+    ff_vc1_1ref_mvdata_bits DATA
+    ff_vc1_1ref_mvdata_codes DATA
+    ff_vc1_1ref_mvdata_vlc DATA
+    ff_vc1_2mv_block_pattern_bits DATA
+    ff_vc1_2mv_block_pattern_codes DATA
+    ff_vc1_2mv_block_pattern_vlc DATA
+    ff_vc1_2ref_mvdata_bits DATA
+    ff_vc1_2ref_mvdata_codes DATA
+    ff_vc1_2ref_mvdata_vlc DATA
+    ff_vc1_4mv_block_pattern_bits DATA
+    ff_vc1_4mv_block_pattern_codes DATA
+    ff_vc1_4mv_block_pattern_vlc DATA
+    ff_vc1_ac_coeff_table DATA
+    ff_vc1_ac_sizes DATA
+    ff_vc1_adv_interlaced_4x4_zz DATA
+    ff_vc1_adv_interlaced_4x8_zz DATA
+    ff_vc1_adv_interlaced_8x4_zz DATA
+    ff_vc1_adv_interlaced_8x8_zz DATA
+    ff_vc1_adv_progressive_4x8_zz DATA
+    ff_vc1_adv_progressive_8x4_zz DATA
+    ff_vc1_apply_p_loop_filter
+    ff_vc1_b_field_mvpred_scales DATA
+    ff_vc1_bfraction_bits DATA
+    ff_vc1_bfraction_codes DATA
+    ff_vc1_bfraction_lut DATA
+    ff_vc1_bfraction_vlc DATA
+    ff_vc1_cbpcy_p_bits DATA
+    ff_vc1_cbpcy_p_codes DATA
+    ff_vc1_cbpcy_p_vlc DATA
+    ff_vc1_decode_blocks
+    ff_vc1_decode_end
+    ff_vc1_decode_entry_point
+    ff_vc1_decode_init_alloc_tables
+    ff_vc1_decode_sequence_header
+    ff_vc1_decoder DATA
+    ff_vc1_dqscale DATA
+    ff_vc1_field_mvpred_scales DATA
+    ff_vc1_fps_dr DATA
+    ff_vc1_fps_nr DATA
+    ff_vc1_icbpcy_p_bits DATA
+    ff_vc1_icbpcy_p_codes DATA
+    ff_vc1_icbpcy_vlc DATA
+    ff_vc1_if_1mv_mbmode_bits DATA
+    ff_vc1_if_1mv_mbmode_codes DATA
+    ff_vc1_if_1mv_mbmode_vlc DATA
+    ff_vc1_if_mmv_mbmode_bits DATA
+    ff_vc1_if_mmv_mbmode_codes DATA
+    ff_vc1_if_mmv_mbmode_vlc DATA
+    ff_vc1_imode_bits DATA
+    ff_vc1_imode_codes DATA
+    ff_vc1_imode_vlc DATA
+    ff_vc1_init_common
+    ff_vc1_init_transposed_scantables
+    ff_vc1_interp_mc
+    ff_vc1_intfr_4mv_mbmode_bits DATA
+    ff_vc1_intfr_4mv_mbmode_codes DATA
+    ff_vc1_intfr_4mv_mbmode_vlc DATA
+    ff_vc1_intfr_non4mv_mbmode_bits DATA
+    ff_vc1_intfr_non4mv_mbmode_codes DATA
+    ff_vc1_intfr_non4mv_mbmode_vlc DATA
+    ff_vc1_loop_filter_iblk
+    ff_vc1_loop_filter_iblk_delayed
+    ff_vc1_mbmode_intfrp DATA
+    ff_vc1_mc_1mv
+    ff_vc1_mc_4mv_chroma
+    ff_vc1_mc_4mv_chroma4
+    ff_vc1_mc_4mv_luma
+    ff_vc1_mv_diff_bits DATA
+    ff_vc1_mv_diff_codes DATA
+    ff_vc1_mv_diff_vlc DATA
+    ff_vc1_mv_pmode_table DATA
+    ff_vc1_mv_pmode_table2 DATA
+    ff_vc1_norm2_bits DATA
+    ff_vc1_norm2_codes DATA
+    ff_vc1_norm2_vlc DATA
+    ff_vc1_norm6_bits DATA
+    ff_vc1_norm6_codes DATA
+    ff_vc1_norm6_vlc DATA
+    ff_vc1_parse_frame_header
+    ff_vc1_parse_frame_header_adv
+    ff_vc1_parser DATA
+    ff_vc1_pixel_aspect DATA
+    ff_vc1_pquant_table DATA
+    ff_vc1_pred_b_mv
+    ff_vc1_pred_b_mv_intfi
+    ff_vc1_pred_mv
+    ff_vc1_pred_mv_intfr
+    ff_vc1_simple_progressive_4x4_zz DATA
+    ff_vc1_smooth_overlap_filter_iblk
+    ff_vc1_subblkpat_bits DATA
+    ff_vc1_subblkpat_codes DATA
+    ff_vc1_subblkpat_vlc DATA
+    ff_vc1_ttblk_bits DATA
+    ff_vc1_ttblk_codes DATA
+    ff_vc1_ttblk_to_tt DATA
+    ff_vc1_ttblk_vlc DATA
+    ff_vc1_ttfrm_to_tt DATA
+    ff_vc1_ttmb_bits DATA
+    ff_vc1_ttmb_codes DATA
+    ff_vc1_ttmb_vlc DATA
+    ff_vc1dsp_init
+    ff_vc1dsp_init_arm
+    ff_vc1image_decoder DATA
+    ff_vcr1_decoder DATA
+    ff_videodsp_init
+    ff_videodsp_init_arm
+    ff_videodsp_init_armv5te
+    ff_vmdaudio_decoder DATA
+    ff_vmdvideo_decoder DATA
+    ff_vmnc_decoder DATA
+    ff_vorbis_channel_layout_offsets DATA
+    ff_vorbis_channel_layouts DATA
+    ff_vorbis_decoder DATA
+    ff_vorbis_encoding_channel_layout_offsets DATA
+    ff_vorbis_floor1_inverse_db_table DATA
+    ff_vorbis_floor1_render_list
+    ff_vorbis_inverse_coupling
+    ff_vorbis_len2vlc
+    ff_vorbis_nth_root
+    ff_vorbis_parser DATA
+    ff_vorbis_ready_floor1_list
+    ff_vorbis_vwin DATA
+    ff_vorbisdsp_init
+    ff_vorbisdsp_init_arm
+    ff_vp3_decoder DATA
+    ff_vp3_parser DATA
+    ff_vp3dsp_init
+    ff_vp3dsp_init_arm
+    ff_vp56_ac_dequant DATA
+    ff_vp56_b2p DATA
+    ff_vp56_b6to4 DATA
+    ff_vp56_candidate_predictor_pos DATA
+    ff_vp56_coeff_bias DATA
+    ff_vp56_coeff_bit_length DATA
+    ff_vp56_coeff_parse_table DATA
+    ff_vp56_dc_dequant DATA
+    ff_vp56_decode_frame
+    ff_vp56_def_mb_types_stats DATA
+    ff_vp56_filter_threshold DATA
+    ff_vp56_free
+    ff_vp56_free_context
+    ff_vp56_init
+    ff_vp56_init_context
+    ff_vp56_init_dequant
+    ff_vp56_init_range_decoder
+    ff_vp56_mb_type_model_model DATA
+    ff_vp56_norm_shift DATA
+    ff_vp56_pc_tree DATA
+    ff_vp56_pmbt_tree DATA
+    ff_vp56_pmbtm_tree DATA
+    ff_vp56_pre_def_mb_type_stats DATA
+    ff_vp56_pva_tree DATA
+    ff_vp56_reference_frame DATA
+    ff_vp5_decoder DATA
+    ff_vp5dsp_init
+    ff_vp6_decoder DATA
+    ff_vp6_filter_diag4_c
+    ff_vp6a_decoder DATA
+    ff_vp6dsp_init
+    ff_vp6dsp_init_arm
+    ff_vp6f_decoder DATA
+    ff_vp78dsp_init
+    ff_vp78dsp_init_arm
+    ff_vp78dsp_init_armv6
+    ff_vp7_decoder DATA
+    ff_vp7dsp_init
+    ff_vp8_dct_cat_prob DATA
+    ff_vp8_decode_frame
+    ff_vp8_decode_free
+    ff_vp8_decode_init
+    ff_vp8_decoder DATA
+    ff_vp8_h_loop_filter16_armv6 DATA
+    ff_vp8_h_loop_filter16_inner_armv6 DATA
+    ff_vp8_h_loop_filter16_simple_armv6 DATA
+    ff_vp8_h_loop_filter8uv_armv6 DATA
+    ff_vp8_h_loop_filter8uv_inner_armv6 DATA
+    ff_vp8_idct_add_armv6 DATA
+    ff_vp8_idct_dc_add4uv_armv6 DATA
+    ff_vp8_idct_dc_add4y_armv6 DATA
+    ff_vp8_idct_dc_add_armv6 DATA
+    ff_vp8_luma_dc_wht_armv6 DATA
+    ff_vp8_luma_dc_wht_dc_armv6 DATA
+    ff_vp8_parser DATA
+    ff_vp8_v_loop_filter16_armv6 DATA
+    ff_vp8_v_loop_filter16_inner_armv6 DATA
+    ff_vp8_v_loop_filter16_simple_armv6 DATA
+    ff_vp8_v_loop_filter8uv_armv6 DATA
+    ff_vp8_v_loop_filter8uv_inner_armv6 DATA
+    ff_vp8dsp_init
+    ff_vp8dsp_init_arm
+    ff_vp8dsp_init_armv6
+    ff_vp9_ac_qlookup DATA
+    ff_vp9_adapt_probs
+    ff_vp9_bwh_tab DATA
+    ff_vp9_col_scan_16x16 DATA
+    ff_vp9_col_scan_16x16_nb DATA
+    ff_vp9_col_scan_4x4 DATA
+    ff_vp9_col_scan_4x4_nb DATA
+    ff_vp9_col_scan_8x8 DATA
+    ff_vp9_col_scan_8x8_nb DATA
+    ff_vp9_dc_qlookup DATA
+    ff_vp9_decode_block
+    ff_vp9_decoder DATA
+    ff_vp9_default_coef_probs DATA
+    ff_vp9_default_kf_partition_probs DATA
+    ff_vp9_default_kf_uvmode_probs DATA
+    ff_vp9_default_kf_ymode_probs DATA
+    ff_vp9_default_probs DATA
+    ff_vp9_default_scan_16x16 DATA
+    ff_vp9_default_scan_16x16_nb DATA
+    ff_vp9_default_scan_32x32 DATA
+    ff_vp9_default_scan_32x32_nb DATA
+    ff_vp9_default_scan_4x4 DATA
+    ff_vp9_default_scan_4x4_nb DATA
+    ff_vp9_default_scan_8x8 DATA
+    ff_vp9_default_scan_8x8_nb DATA
+    ff_vp9_fill_mv
+    ff_vp9_filter_lut DATA
+    ff_vp9_filter_tree DATA
+    ff_vp9_inter_mode_tree DATA
+    ff_vp9_inter_recon_16bpp
+    ff_vp9_inter_recon_8bpp
+    ff_vp9_intra_recon_16bpp
+    ff_vp9_intra_recon_8bpp
+    ff_vp9_intra_txfm_type DATA
+    ff_vp9_intramode_tree DATA
+    ff_vp9_loopfilter_sb
+    ff_vp9_model_pareto8 DATA
+    ff_vp9_mv_class_tree DATA
+    ff_vp9_mv_fp_tree DATA
+    ff_vp9_mv_joint_tree DATA
+    ff_vp9_parser DATA
+    ff_vp9_partition_tree DATA
+    ff_vp9_row_scan_16x16 DATA
+    ff_vp9_row_scan_16x16_nb DATA
+    ff_vp9_row_scan_4x4 DATA
+    ff_vp9_row_scan_4x4_nb DATA
+    ff_vp9_row_scan_8x8 DATA
+    ff_vp9_row_scan_8x8_nb DATA
+    ff_vp9_scans DATA
+    ff_vp9_scans_nb DATA
+    ff_vp9_segmentation_tree DATA
+    ff_vp9_subpel_filters DATA
+    ff_vp9_superframe_bsf DATA
+    ff_vp9dsp_init
+    ff_vp9dsp_init_10
+    ff_vp9dsp_init_10bpp_arm
+    ff_vp9dsp_init_12
+    ff_vp9dsp_init_12bpp_arm
+    ff_vp9dsp_init_8
+    ff_vp9dsp_init_arm
+    ff_vp9dsp_intrapred_init_10
+    ff_vp9dsp_mc_init_10
+    ff_vp9dsp_scaled_mc_init_10
+    ff_vplayer_decoder DATA
+    ff_vqa_decoder DATA
+    ff_w53_32_c
+    ff_w97_32_c
+    ff_w_tab_sr DATA
+    ff_wavpack_decoder DATA
+    ff_webp_decoder DATA
+    ff_webvtt_decoder DATA
+    ff_weighted_vector_sumf
+    ff_wma_critical_freqs DATA
+    ff_wma_end
+    ff_wma_get_frame_len_bits
+    ff_wma_get_large_val
+    ff_wma_hgain_huffbits DATA
+    ff_wma_hgain_huffcodes DATA
+    ff_wma_init
+    ff_wma_lsp_codebook DATA
+    ff_wma_run_level_decode
+    ff_wma_total_gain_to_bits
+    ff_wmalossless_decoder DATA
+    ff_wmapro_decoder DATA
+    ff_wmav1_decoder DATA
+    ff_wmav2_decoder DATA
+    ff_wmavoice_decoder DATA
+    ff_wmv1_c_dc_scale_table DATA
+    ff_wmv1_decoder DATA
+    ff_wmv1_encoder DATA
+    ff_wmv1_scantable DATA
+    ff_wmv1_y_dc_scale_table DATA
+    ff_wmv2_add_mb
+    ff_wmv2_common_init
+    ff_wmv2_decode_mb
+    ff_wmv2_decode_picture_header
+    ff_wmv2_decode_secondary_picture_header
+    ff_wmv2_decoder DATA
+    ff_wmv2_inter_table DATA
+    ff_wmv2_scantableA DATA
+    ff_wmv2_scantableB DATA
+    ff_wmv2dsp_init
+    ff_wmv3_dc_scale_table DATA
+    ff_wmv3_decoder DATA
+    ff_wmv3image_decoder DATA
+    ff_wnv1_decoder DATA
+    ff_write_pass1_stats
+    ff_write_quant_matrix
+    ff_ws_snd1_decoder DATA
+    ff_xan_dpcm_decoder DATA
+    ff_xan_wc3_decoder DATA
+    ff_xan_wc4_decoder DATA
+    ff_xbin_decoder DATA
+    ff_xbm_decoder DATA
+    ff_xface_decoder DATA
+    ff_xface_generate_face
+    ff_xface_probranges_2x2 DATA
+    ff_xface_probranges_per_level DATA
+    ff_xl_decoder DATA
+    ff_xma1_decoder DATA
+    ff_xma2_decoder DATA
+    ff_xma_parser DATA
+    ff_xpm_decoder DATA
+    ff_xsub_decoder DATA
+    ff_xvid_idct
+    ff_xvid_idct_init
+    ff_xwd_decoder DATA
+    ff_y41p_decoder DATA
+    ff_ylc_decoder DATA
+    ff_yop_decoder DATA
+    ff_yuv4_decoder DATA
+    ff_zero12v_decoder DATA
+    ff_zigzag_direct DATA
+    ff_zigzag_scan DATA

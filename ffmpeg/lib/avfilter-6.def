@@ -1,0 +1,193 @@
+EXPORTS
+    av_abuffersink_params_alloc
+    av_buffersink_get_channel_layout
+    av_buffersink_get_channels
+    av_buffersink_get_format
+    av_buffersink_get_frame
+    av_buffersink_get_frame_flags
+    av_buffersink_get_frame_rate
+    av_buffersink_get_h
+    av_buffersink_get_hw_frames_ctx
+    av_buffersink_get_sample_aspect_ratio
+    av_buffersink_get_sample_rate
+    av_buffersink_get_samples
+    av_buffersink_get_time_base
+    av_buffersink_get_type
+    av_buffersink_get_w
+    av_buffersink_params_alloc
+    av_buffersink_set_frame_size
+    av_buffersrc_add_frame
+    av_buffersrc_add_frame_flags
+    av_buffersrc_get_nb_failed_requests
+    av_buffersrc_parameters_alloc
+    av_buffersrc_parameters_set
+    av_buffersrc_write_frame
+    av_filter_ffversion DATA
+    av_filter_next
+    avfilter_add_matrix
+    avfilter_all_channel_layouts DATA
+    avfilter_config_links
+    avfilter_configuration
+    avfilter_free
+    avfilter_get_by_name
+    avfilter_get_class
+    avfilter_get_matrix
+    avfilter_graph_add_filter
+    avfilter_graph_alloc
+    avfilter_graph_alloc_filter
+    avfilter_graph_config
+    avfilter_graph_create_filter
+    avfilter_graph_dump
+    avfilter_graph_free
+    avfilter_graph_get_filter
+    avfilter_graph_parse
+    avfilter_graph_parse2
+    avfilter_graph_parse_ptr
+    avfilter_graph_queue_command
+    avfilter_graph_request_oldest
+    avfilter_graph_send_command
+    avfilter_graph_set_auto_convert
+    avfilter_init_dict
+    avfilter_init_filter
+    avfilter_init_str
+    avfilter_inout_alloc
+    avfilter_inout_free
+    avfilter_insert_filter
+    avfilter_license
+    avfilter_link
+    avfilter_link_free
+    avfilter_link_get_channels
+    avfilter_link_set_closed
+    avfilter_make_format64_list
+    avfilter_mul_matrix
+    avfilter_next
+    avfilter_open
+    avfilter_pad_count
+    avfilter_pad_get_name
+    avfilter_pad_get_type
+    avfilter_process_command
+    avfilter_register
+    avfilter_register_all
+    avfilter_sub_matrix
+    avfilter_transform
+    avfilter_uninit
+    avfilter_version
+    ff_add_channel_layout
+    ff_add_format
+    ff_af_afifo DATA
+    ff_all_channel_counts
+    ff_all_channel_layouts
+    ff_all_formats
+    ff_all_samplerates
+    ff_asink_abuffer DATA
+    ff_asrc_abuffer DATA
+    ff_avfilter_graph_update_heap
+    ff_avfilter_link_set_in_status
+    ff_avfilter_link_set_out_status
+    ff_avsrc_movie DATA
+    ff_blend_mask
+    ff_blend_rectangle
+    ff_channel_layouts_changeref
+    ff_channel_layouts_ref
+    ff_channel_layouts_unref
+    ff_command_queue_pop
+    ff_copy_rectangle
+    ff_copy_rectangle2
+    ff_default_get_audio_buffer
+    ff_default_get_video_buffer
+    ff_default_query_formats
+    ff_draw_color
+    ff_draw_init
+    ff_draw_rectangle
+    ff_draw_round_to_sub
+    ff_draw_supported_pixel_formats
+    ff_dualinput_filter_frame
+    ff_dualinput_init
+    ff_dualinput_request_frame
+    ff_dualinput_uninit
+    ff_fill_line_with_color
+    ff_fill_rectangle
+    ff_fill_rgba_map
+    ff_filter_activate
+    ff_filter_alloc
+    ff_filter_frame
+    ff_filter_get_nb_threads
+    ff_filter_graph_remove_filter
+    ff_filter_graph_run_once
+    ff_filter_set_ready
+    ff_fmt_is_in
+    ff_formats_changeref
+    ff_formats_ref
+    ff_formats_unref
+    ff_frame_pool_audio_init
+    ff_frame_pool_get
+    ff_frame_pool_get_audio_config
+    ff_frame_pool_get_video_config
+    ff_frame_pool_uninit
+    ff_frame_pool_video_init
+    ff_framequeue_add
+    ff_framequeue_free
+    ff_framequeue_global_init
+    ff_framequeue_init
+    ff_framequeue_peek
+    ff_framequeue_skip_samples
+    ff_framequeue_take
+    ff_framesync_add_frame
+    ff_framesync_configure
+    ff_framesync_drop
+    ff_framesync_filter_frame
+    ff_framesync_get_frame
+    ff_framesync_init
+    ff_framesync_next
+    ff_framesync_process_frame
+    ff_framesync_request_frame
+    ff_framesync_uninit
+    ff_get_audio_buffer
+    ff_get_video_buffer
+    ff_graph_thread_free
+    ff_graph_thread_init
+    ff_inlink_acknowledge_status
+    ff_inlink_check_available_frame
+    ff_inlink_check_available_samples
+    ff_inlink_consume_frame
+    ff_inlink_consume_samples
+    ff_inlink_evaluate_timeline_at_frame
+    ff_inlink_make_frame_writable
+    ff_inlink_process_commands
+    ff_inlink_request_frame
+    ff_insert_pad
+    ff_log2_tab DATA
+    ff_make_format_list
+    ff_make_formatu64_list
+    ff_merge_channel_layouts
+    ff_merge_formats
+    ff_merge_samplerates
+    ff_null_get_audio_buffer
+    ff_null_get_video_buffer
+    ff_opencl_register_filter_kernel_code_all
+    ff_parse_channel_layout
+    ff_parse_pixel_format
+    ff_parse_sample_format
+    ff_parse_sample_rate
+    ff_parse_time_base
+    ff_planar_sample_fmts
+    ff_poll_frame
+    ff_query_formats_all_layouts
+    ff_request_frame
+    ff_scale_eval_dimensions
+    ff_set_common_channel_layouts
+    ff_set_common_formats
+    ff_set_common_samplerates
+    ff_tlog_link
+    ff_tlog_ref
+    ff_update_link_current_pts
+    ff_vf_fifo DATA
+    ff_vf_hflip DATA
+    ff_vf_overlay DATA
+    ff_vf_rotate DATA
+    ff_vf_scale DATA
+    ff_vf_scale2ref DATA
+    ff_vf_vflip DATA
+    ff_vf_yadif DATA
+    ff_vsink_buffer DATA
+    ff_vsrc_buffer DATA

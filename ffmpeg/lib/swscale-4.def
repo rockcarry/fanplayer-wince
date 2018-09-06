@@ -1,0 +1,126 @@
+EXPORTS
+    deinterleaveBytes DATA
+    ff_dither_2x2_4 DATA
+    ff_dither_2x2_8 DATA
+    ff_dither_4x4_16 DATA
+    ff_dither_8x8_128 DATA
+    ff_dither_8x8_220 DATA
+    ff_dither_8x8_32 DATA
+    ff_dither_8x8_73 DATA
+    ff_free_filters
+    ff_getSwsFunc
+    ff_get_unscaled_swscale
+    ff_get_unscaled_swscale_arm
+    ff_hcscale_fast_c
+    ff_hyscale_fast_c
+    ff_init_desc_cfmt_convert
+    ff_init_desc_chscale
+    ff_init_desc_fmt_convert
+    ff_init_desc_hscale
+    ff_init_desc_no_chr
+    ff_init_filters
+    ff_init_gamma_convert
+    ff_init_slice_from_src
+    ff_init_vscale
+    ff_init_vscale_pfn
+    ff_log2_tab DATA
+    ff_rgb24toyv12 DATA
+    ff_rgb24toyv12_c
+    ff_rotate_slice
+    ff_sws_alphablendaway
+    ff_sws_context_class DATA
+    ff_sws_init_input_funcs
+    ff_sws_init_output_funcs
+    ff_sws_init_range_convert
+    ff_sws_init_swscale_arm
+    ff_sws_rgb2rgb_init
+    ff_yuv2rgb_c_init_tables
+    ff_yuv2rgb_coeffs DATA
+    ff_yuv2rgb_get_func_ptr
+    interleaveBytes DATA
+    planar2x DATA
+    rgb12to15
+    rgb12tobgr12
+    rgb15to16 DATA
+    rgb15to24
+    rgb15to32 DATA
+    rgb15tobgr15
+    rgb15tobgr16
+    rgb15tobgr24 DATA
+    rgb15tobgr32
+    rgb16to15 DATA
+    rgb16to24
+    rgb16to32 DATA
+    rgb16tobgr15
+    rgb16tobgr16
+    rgb16tobgr24 DATA
+    rgb16tobgr32
+    rgb24to15 DATA
+    rgb24to16 DATA
+    rgb24to32
+    rgb24tobgr15 DATA
+    rgb24tobgr16 DATA
+    rgb24tobgr24 DATA
+    rgb24tobgr32 DATA
+    rgb32to15 DATA
+    rgb32to16 DATA
+    rgb32to24
+    rgb32tobgr15 DATA
+    rgb32tobgr16 DATA
+    rgb32tobgr24 DATA
+    rgb48tobgr48_bswap
+    rgb48tobgr48_nobswap
+    rgb64to48_bswap
+    rgb64to48_nobswap
+    rgb64tobgr48_bswap
+    rgb64tobgr48_nobswap
+    shuffle_bytes_0321 DATA
+    shuffle_bytes_1230
+    shuffle_bytes_2103 DATA
+    shuffle_bytes_3012
+    shuffle_bytes_3210
+    sws_addVec
+    sws_allocVec
+    sws_alloc_context
+    sws_alloc_set_opts
+    sws_cloneVec
+    sws_convVec
+    sws_convertPalette8ToPacked24
+    sws_convertPalette8ToPacked32
+    sws_freeContext
+    sws_freeFilter
+    sws_freeVec
+    sws_getCachedContext
+    sws_getCoefficients
+    sws_getColorspaceDetails
+    sws_getConstVec
+    sws_getContext
+    sws_getDefaultFilter
+    sws_getGaussianVec
+    sws_getIdentityVec
+    sws_get_class
+    sws_init_context
+    sws_isSupportedEndiannessConversion
+    sws_isSupportedInput
+    sws_isSupportedOutput
+    sws_normalizeVec
+    sws_printVec2
+    sws_scale
+    sws_scaleVec
+    sws_setColorspaceDetails
+    sws_shiftVec
+    sws_subVec
+    swscale_configuration
+    swscale_license
+    swscale_version
+    uyvytoyuv420 DATA
+    uyvytoyuv422 DATA
+    vu9_to_vu12 DATA
+    yuv422ptouyvy DATA
+    yuv422ptoyuy2 DATA
+    yuy2toyv12 DATA
+    yuyvtoyuv420 DATA
+    yuyvtoyuv422 DATA
+    yv12touyvy DATA
+    yv12toyuy2 DATA
+    yvu9_to_yuy2 DATA

@@ -2,16 +2,6 @@
 #include <windows.h>
 #include "ffplayer.h"
 
-char* UnicodeToUTF8(const wchar_t *str)
-{
-    char *result ;
-    int   textlen;
-    textlen = WideCharToMultiByte(CP_UTF8, 0, str, -1, NULL, 0, NULL, NULL);
-    result  = (char*) malloc((textlen+1) * sizeof(char));
-    WideCharToMultiByte(CP_UTF8, 0, str, -1, result, textlen, NULL, NULL);
-    return result;
-}
-
 #define PLAYER_WND_CLASS TEXT("TestPlayer")
 #define PLAYER_WND_NAME  TEXT("TestPlayer")
 
@@ -43,14 +33,13 @@ static LRESULT CALLBACK PLAYER_WNDPROC(
     return 0;
 }
 
-int PASCAL WinMain(HINSTANCE hInst, HINSTANCE hPreInst, LPWSTR lpszCmdLine, int nCmdShow)
+int PASCAL WinMain(HINSTANCE hInst, HINSTANCE hPreInst, TCHAR* lpszCmdLine, int nCmdShow)
 {
-    WNDCLASS wc      = {0};
-    HWND     hwnd    = NULL;
-    MSG      msg     = {0};
-    OPENFILENAME ofn = {0};
-    char *futf8      = NULL;
-    TCHAR fname[MAX_PATH] = TEXT("");
+    WNDCLASS wc           = {0};
+    HWND     hwnd         = NULL;
+    MSG      msg          = {0};
+    OPENFILENAME ofn      = {0};
+    TCHAR fname[MAX_PATH] = {0};
 
     ofn.lStructSize  = sizeof(ofn);
     ofn.hwndOwner    = hwnd;
@@ -60,8 +49,6 @@ int PASCAL WinMain(HINSTANCE hInst, HINSTANCE hPreInst, LPWSTR lpszCmdLine, int 
     ofn.lpstrTitle   = TEXT("open");
     if (!GetOpenFileName(&ofn)) {
         return 0;
-    } else {
-        futf8 = UnicodeToUTF8(fname);
     }
 
     wc.lpfnWndProc   = PLAYER_WNDPROC;
@@ -81,7 +68,7 @@ int PASCAL WinMain(HINSTANCE hInst, HINSTANCE hPreInst, LPWSTR lpszCmdLine, int 
     UpdateWindow(hwnd);
 
     // open player
-    g_player = player_open(futf8, hwnd, NULL);
+    g_player = player_open(fname, hwnd, NULL);
 
     while (GetMessage(&msg, NULL, 0, 0)) {
         TranslateMessage(&msg);
@@ -94,7 +81,6 @@ int PASCAL WinMain(HINSTANCE hInst, HINSTANCE hPreInst, LPWSTR lpszCmdLine, int 
         g_player = NULL;
     }
 
-    if (futf8) free(futf8);
     return 0;
 }
 

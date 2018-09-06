@@ -5,6 +5,7 @@
 // headers
 #include <windows.h>
 #include <inttypes.h>
+#include <tchar.h>
 
 #ifndef PATH_MAX
 #define PATH_MAX   MAX_PATH

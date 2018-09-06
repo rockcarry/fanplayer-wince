@@ -199,5 +199,5 @@ void vdev_avsync_and_complete(void *ctxt)
     }
 
     if (c->ticksleep > 0) av_usleep(c->ticksleep * 1000);
-    av_log(NULL, AV_LOG_ERROR, "d: %3d, s: %3d\n", avdiff, c->ticksleep);
+    av_log(NULL, AV_LOG_INFO, "d: %3d, s: %3d\n", avdiff, c->ticksleep);
 }

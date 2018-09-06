@@ -68,8 +68,12 @@ typedef struct {
     int64_t            tick_demux;
 
     // save url and appdata
-    char             url[PATH_MAX];
+    TCHAR            url[PATH_MAX];
     void            *appdata;
+
+    #define WINCE_FBUF_SIZE  (64 * 1024)
+    FILE            *wince_fp;
+    uint8_t          wince_fbuf[WINCE_FBUF_SIZE];
 } PLAYER;
 
 // 内部常量定义
@@ -278,9 +282,36 @@ static int get_stream_total(PLAYER *player, enum AVMediaType type) {
     return total;
 }
 
+static int read_buffer(void *opaque, uint8_t *buf, int size)
+{
+    int ret;
+    PLAYER *player = (PLAYER*)opaque;
+    if (!player->wince_fp) return -1;
+
+    ret = fread(buf, 1, size, player->wince_fp);
+    return ret > 0 ? ret : -1;
+}
+
+static int64_t seek_buffer(void *opaque, int64_t offset, int whence)
+{
+    PLAYER *player = (PLAYER*)opaque;
+    if (!player->wince_fp) return -1;
+
+    if (whence == AVSEEK_SIZE) {
+        size_t curpos = ftell(player->wince_fp);
+        size_t fsize;
+        fseek(player->wince_fp, 0, SEEK_END);
+        fsize = ftell(player->wince_fp);
+        fseek(player->wince_fp, curpos, SEEK_SET);
+        return fsize;
+    } else {
+        return fseek(player->wince_fp, offset, whence);
+    }
+}
+
 static int player_prepare(PLAYER *player)
 {
-    char          *url    = player->url;
+    TCHAR         *url    = player->url;
     AVInputFormat *fmt    = NULL;
     int           arate   = 0;
     int           aformat = 0;
@@ -318,18 +349,26 @@ static int player_prepare(PLAYER *player)
     // set init_timetick & init_timeout
     player->init_timetick = av_gettime_relative();
     player->init_timeout  = player->init_params.init_timeout ? player->init_params.init_timeout * 1000 : -1;
+    player->wince_fp      = _tfopen(url, TEXT("rb"));
+
+    if (1) {
+        AVIOContext *avio = avio_alloc_context(player->wince_fbuf, WINCE_FBUF_SIZE, 0, NULL, read_buffer, NULL, seek_buffer);
+        avio->opaque = player;
+        player->avformat_context->pb = avio;
+        av_dict_set(&opts, "protocol_whitelist", "file,crypto", 0);
+    }
 
     while (1) {
-        if (avformat_open_input(&player->avformat_context, url, fmt, &opts) != 0) {
+        if (avformat_open_input(&player->avformat_context, NULL, fmt, &opts) != 0) {
             if (player->init_params.auto_reconnect > 0 && !(player->player_status & PS_CLOSE)) {
-                av_log(NULL, AV_LOG_INFO, "retry to open url: %s ...\n", url);
+                av_log(NULL, AV_LOG_INFO, "retry to open url ...\n");
                 av_usleep(100*1000);
             } else {
-                av_log(NULL, AV_LOG_ERROR, "failed to open url: %s !\n", url);
+                av_log(NULL, AV_LOG_ERROR, "failed to open url !\n");
                 goto done;
             }
         } else {
-            av_log(NULL, AV_LOG_INFO, "successed to open url: %s !\n", url);
+            av_log(NULL, AV_LOG_INFO, "successed to open url !\n");
             break;
         }
     }
@@ -655,7 +694,7 @@ static DWORD WINAPI video_decode_thread_proc(void *param)
 }
 
 // 函数实现
-void* player_open(char *file, void *appdata, PLAYER_INIT_PARAMS *params)
+void* player_open(TCHAR *file, void *appdata, PLAYER_INIT_PARAMS *params)
 {
     PLAYER *player = NULL;
 
@@ -665,7 +704,7 @@ void* player_open(char *file, void *appdata, PLAYER_INIT_PARAMS *params)
     avformat_network_init();
 
     // setup log
-    g_fp = fopen("fanplayer.log", "wb");
+//  g_fp = fopen("fanplayer.log", "wb");
     av_log_set_level   (AV_LOG_ERROR);
     av_log_set_callback(avlog_callback);
 
@@ -686,7 +725,7 @@ void* player_open(char *file, void *appdata, PLAYER_INIT_PARAMS *params)
     }
 
     //++ for player_prepare
-    strcpy(player->url, file);
+    _tcscpy(player->url, file);
 #ifdef WIN32
     player->appdata = appdata;
 #endif
@@ -747,6 +786,7 @@ void player_close(void *hplayer)
     if (player->acodec_context  ) avcodec_close(player->acodec_context);
     if (player->vcodec_context  ) avcodec_close(player->vcodec_context);
     if (player->avformat_context) avformat_close_input(&player->avformat_context);
+    if (player->wince_fp        ) fclose(player->wince_fp);
 
     free(player);
 

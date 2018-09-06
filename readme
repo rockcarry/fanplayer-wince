@@ -1,0 +1,8 @@
+port fanplayer to wince.
+
+need cegcc to compile ffmpeg and fanplayer source code.
+
+suggest using arm-mingw32ce 0.55. the 0.59.1 version has some problem when build ffmpeg.
+
+
+
